@@ -11,8 +11,8 @@ An AI-powered interactive storytelling application inspired by Vikram Betal stor
 
 ## 🛠 Required APIs (Free Options Available)
 - **Hugging Face API** (free): Image generation via Stable Diffusion
-- **Google TTS** (free): Indian accent narration  
-- **ElevenLabs** (optional): Premium voice quality
+- **Google TTS** (free): Indian accent narration with male voice  
+- **ElevenLabs** (optional): Premium voice quality with Daniel's mature male voice
 
 ## 📦 Quick Start
 

@@ -82,6 +82,9 @@ const BetalMascot = ({ state, mood }: BetalMascotProps) => {
           <p className="text-purple-200 text-sm font-serif">
             {mood === 'angry' ? '"You have answered! Now I shall depart..."' : '"Choose wisely, mortal..."'}
           </p>
+          <div className="text-xs text-purple-400 mt-1">
+            🎭 Betal speaks with a wise male voice
+          </div>
         </div>
       )}
 
