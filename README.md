@@ -1,10 +1,20 @@
-# Welcome to your Lovable project
+# Smart Cultural Storyteller - Betal's Tales
 
-## Project info
+An AI-powered interactive storytelling application inspired by Vikram Betal stories. Features a sleeping Betal mascot who awakens to tell moral tales with AI-generated visuals.
 
-**URL**: https://lovable.dev/projects/9d3117c4-43ad-4658-9843-364ff1e8207e
+## 🎯 Features
+- Interactive Betal mascot (tap to wake)
+- 10 stories across 4 themes (Wisdom, Courage, Kindness, Justice)
+- AI-generated images and narration with Indian accent
+- Mystical animations and effects
+- Interactive moral questions
 
-## How can I edit this code?
+## 🛠 Required APIs (Free Options Available)
+- **Hugging Face API** (free): Image generation via Stable Diffusion
+- **Google TTS** (free): Indian accent narration  
+- **ElevenLabs** (optional): Premium voice quality
+
+## 📦 Quick Start
 
 There are several ways of editing your application.
 

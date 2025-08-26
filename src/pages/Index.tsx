@@ -1,11 +1,109 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState, useRef, useEffect } from 'react';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import BetalMascot from '@/components/BetalMascot';
+import StoryPlayer from '@/components/StoryPlayer';
+import ThemeSelector from '@/components/ThemeSelector';
+import QuestionModal from '@/components/QuestionModal';
+import { stories } from '@/data/stories';
+import { toast } from 'sonner';
 
 const Index = () => {
+  const [gameState, setGameState] = useState<'sleeping' | 'awake' | 'story' | 'question'>('sleeping');
+  const [selectedStory, setSelectedStory] = useState<any>(null);
+  const [betalMood, setBetalMood] = useState<'calm' | 'angry'>('calm');
+  
+  const handleWakeBetal = () => {
+    if (gameState === 'sleeping') {
+      setGameState('awake');
+      toast.success("Betal awakens! Choose a theme for your story...");
+    }
+  };
+
+  const handleThemeSelect = (theme: string) => {
+    const themeStories = stories.filter(story => story.theme === theme);
+    const randomStory = themeStories[Math.floor(Math.random() * themeStories.length)];
+    setSelectedStory(randomStory);
+    setGameState('story');
+  };
+
+  const handleStoryEnd = () => {
+    setGameState('question');
+  };
+
+  const handleAnswerQuestion = (answered: boolean) => {
+    setBetalMood(answered ? 'angry' : 'calm');
+    setTimeout(() => {
+      setGameState('sleeping');
+      setBetalMood('calm');
+      setSelectedStory(null);
+    }, 3000);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 relative overflow-hidden">
+      {/* Mystical Background Elements */}
+      <div className="absolute inset-0 bg-[url('/stars.png')] opacity-30"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+      
+      {/* Main Content */}
+      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center p-4">
+        
+        {gameState === 'sleeping' && (
+          <div className="text-center space-y-8">
+            <div className="space-y-4">
+              <h1 className="text-6xl font-bold text-white mb-4 font-serif">
+                The Tales of Betal
+              </h1>
+              <p className="text-xl text-purple-200 max-w-2xl mx-auto">
+                Tap on the ancient spirit Betal to awaken him and listen to mystical stories from the past
+              </p>
+            </div>
+            
+            <div 
+              className="cursor-pointer transform transition-transform hover:scale-105"
+              onClick={handleWakeBetal}
+            >
+              <BetalMascot state="sleeping" mood={betalMood} />
+            </div>
+            
+            <p className="text-sm text-purple-300 animate-pulse">
+              Tap on Betal to wake him up
+            </p>
+          </div>
+        )}
+
+        {gameState === 'awake' && (
+          <div className="text-center space-y-8">
+            <BetalMascot state="awake" mood={betalMood} />
+            <div className="space-y-4">
+              <h2 className="text-3xl font-bold text-white font-serif">
+                Choose Your Story Theme
+              </h2>
+              <p className="text-purple-200">
+                What kind of tale would you like to hear tonight?
+              </p>
+            </div>
+            <ThemeSelector onThemeSelect={handleThemeSelect} />
+          </div>
+        )}
+
+        {gameState === 'story' && selectedStory && (
+          <div className="w-full max-w-4xl">
+            <StoryPlayer 
+              story={selectedStory} 
+              onStoryEnd={handleStoryEnd}
+            />
+          </div>
+        )}
+
+        {gameState === 'question' && selectedStory && (
+          <QuestionModal
+            story={selectedStory}
+            betalMood={betalMood}
+            onAnswer={handleAnswerQuestion}
+          />
+        )}
       </div>
     </div>
   );
