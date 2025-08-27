@@ -2,18 +2,17 @@
 
 ## 🎯 Required APIs for Full Functionality
 
-### 1. Hugging Face Inference API (FREE) 
-**For AI Image Generation**
+### 1. MiniMax Hailuo Video API (Text-to-Video)
+**For AI Video Generation**
 
 **Setup Steps:**
-1. Visit https://huggingface.co/settings/tokens
-2. Create account (free)
-3. Click "New token" 
-4. Select "Read" permission
-5. Copy your token
-6. Add to notebook: `HUGGINGFACE_TOKEN = "hf_your_token_here"`
+1. Obtain an API key from your provider (MiniMax Hailuo or a compatible proxy)
+2. Set environment variables:
+   - `MINIMAX_API_KEY="your_api_key"`
+   - Optional: `MINIMAX_API_URL` (defaults to the Segmind Hailuo endpoint)
+3. The notebook reads these automatically
 
-**Free Tier:** 1,000 requests/month
+**Free/Pricing:** Refer to your provider's pricing
 
 ---
 
@@ -38,14 +37,14 @@ tts = gTTS(text=text, lang='en', tld='co.in', slow=True)  # Slower = deeper/masc
 **For Premium Male Voice Quality**
 
 **Setup Steps:**
-1. Visit https://elevenlabs.io/
+1. Visit `https://elevenlabs.io`
 2. Create free account
 3. Go to Profile → API Keys
 4. Copy API key
 5. Add to notebook: `ELEVENLABS_API_KEY = "your_key_here"`
 
 **Male Voices Available:**
-- **Daniel** (ID: `onwK4e9ZLuTAKqWW03F9`) - Mature, wise storyteller ✅ *Currently Used*
+- **Daniel** (ID: `onwK4e9ZLuTAKqWW03F9`) - Mature, wise storyteller ✅
 - **Liam** (ID: `TX3LPaxmHKxFdv7VOQHJ`) - Young, energetic
 - **Callum** (ID: `N2lVS1w4EtoT3dr4eOWO`) - British accent
 - **George** (ID: `JBFqnCBsd6RMkjVDRZzb`) - Deep, authoritative
@@ -59,7 +58,7 @@ tts = gTTS(text=text, lang='en', tld='co.in', slow=True)  # Slower = deeper/masc
 
 ### Install Dependencies:
 ```bash
-pip install requests pillow opencv-python moviepy huggingface-hub transformers torch diffusers elevenlabs gTTS pydub gradio
+pip install requests pillow opencv-python moviepy torch diffusers elevenlabs gTTS pydub gradio
 ```
 
 ### Run the Generation Notebook:
@@ -81,7 +80,7 @@ generated_content/
 ├── images/
 │   ├── wisdom-1_scene_1.png
 │   ├── wisdom-1_scene_2.png
-│   └── ... (6 images per story)
+│   └── ...
 ├── audio/
 │   └── wisdom-1_narration.mp3  # Male voice
 ├── videos/
@@ -107,10 +106,6 @@ generate_audio_gtts(text, filename, lang='en', tld='co.in')
 ```python
 # Switch voices by changing the voice ID:
 url = "https://api.elevenlabs.io/v1/text-to-speech/[VOICE_ID]"
-
-# Daniel (current): onwK4e9ZLuTAKqWW03F9
-# George (deeper): JBFqnCBsd6RMkjVDRZzb  
-# Liam (younger): TX3LPaxmHKxFdv7VOQHJ
 ```
 
 ---
@@ -119,12 +114,13 @@ url = "https://api.elevenlabs.io/v1/text-to-speech/[VOICE_ID]"
 
 **Common Issues:**
 
-1. **"Model loading" error (Hugging Face)**
-   - Wait 2-3 minutes and try again
-   - Model needs to "warm up" on first use
+1. **API errors (MiniMax/Proxy)**
+   - Verify `MINIMAX_API_KEY`
+   - Check `MINIMAX_API_URL` or provider status
+   - Inspect notebook logs for response details
 
 2. **Rate limiting**
-   - Free tier has limits
+   - Respect provider limits
    - Add delays between requests (already included)
 
 3. **Audio quality concerns**
@@ -132,32 +128,20 @@ url = "https://api.elevenlabs.io/v1/text-to-speech/[VOICE_ID]"
    - gTTS is great for testing/prototyping
 
 4. **Memory issues**
-   - Use Google Colab with GPU for image generation
+   - Use Google Colab with GPU for heavier models
    - Process stories one at a time if needed
 
 ---
 
 ## 💡 Cost Optimization Tips
 
-**Free Tier Strategy:**
-- Use Hugging Face for images (1,000/month)
-- Use gTTS for audio (unlimited)
-- Generate 10 stories = ~60 images total
-- Well within free limits!
-
-**Premium Strategy:**
-- Add ElevenLabs for voice quality
-- Use Runware API for faster image generation
-- Consider batch processing for efficiency
+- Start with gTTS for voice (free)
+- Batch scene generation if supported by your provider
 
 ---
 
 ## 📞 Support
 
-**If you encounter issues:**
-1. Check API key format and permissions
-2. Verify internet connection for API calls
-3. Try running one story at a time first
-4. Check the notebook output for specific error messages
-
-**Pro Tip:** Start with the free options (Hugging Face + gTTS) to test the full pipeline before adding premium services!
+- Verify keys and network connectivity
+- Run one story at a time first
+- Check the notebook output for specific error messages

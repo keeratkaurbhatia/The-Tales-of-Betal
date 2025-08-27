@@ -19,7 +19,6 @@ const StoryPlayer = ({ story, onStoryEnd }: StoryPlayerProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [currentSubtitle, setCurrentSubtitle] = useState('');
   const audioRef = useRef<HTMLAudioElement>(null);
   const intervalRef = useRef<NodeJS.Timeout>();
 
@@ -33,12 +32,6 @@ const StoryPlayer = ({ story, onStoryEnd }: StoryPlayerProps) => {
           // Change images every 5 seconds
           const imageIndex = Math.floor(newTime / 5) % story.images.length;
           setCurrentImageIndex(imageIndex);
-          
-          // Update subtitles
-          const subtitle = story.subtitles.find(sub => 
-            newTime >= sub.start && newTime <= sub.end
-          );
-          setCurrentSubtitle(subtitle?.text || '');
           
           // End story after 30 seconds (demo)
           if (newTime >= 30) {
@@ -93,16 +86,7 @@ const StoryPlayer = ({ story, onStoryEnd }: StoryPlayerProps) => {
           <div className="absolute inset-0 bg-[url('/particles.png')] opacity-20 animate-pulse"></div>
         </div>
         
-        {/* Subtitles - Moved outside video container */}
-        {currentSubtitle && (
-          <div className="mt-4">
-            <div className="bg-black/80 rounded-lg p-4 border border-purple-400/50">
-              <p className="text-white text-center font-medium leading-relaxed">
-                {currentSubtitle}
-              </p>
-            </div>
-          </div>
-        )}
+        
 
         {/* Controls */}
         <div className="flex items-center justify-center space-x-6">
