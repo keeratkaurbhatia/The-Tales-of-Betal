@@ -18,53 +18,64 @@ interface StoryPlayerProps {
 const StoryPlayer = ({ story, onStoryEnd }: StoryPlayerProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentSubtitle, setCurrentSubtitle] = useState('');
-  const audioRef = useRef<HTMLAudioElement>(null);
-  const intervalRef = useRef<NodeJS.Timeout>();
+  const [duration, setDuration] = useState(0);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    // Simulate audio playback for demo (replace with actual audio)
-    if (isPlaying) {
-      intervalRef.current = setInterval(() => {
-        setCurrentTime(prev => {
-          const newTime = prev + 1;
-          
-          // Change images every 5 seconds
-          const imageIndex = Math.floor(newTime / 5) % story.images.length;
-          setCurrentImageIndex(imageIndex);
-          
-          // Update subtitles
-          const subtitle = story.subtitles.find(sub => 
-            newTime >= sub.start && newTime <= sub.end
-          );
-          setCurrentSubtitle(subtitle?.text || '');
-          
-          // End story after 30 seconds (demo)
-          if (newTime >= 30) {
-            setIsPlaying(false);
-            onStoryEnd();
-            return 0;
-          }
-          
-          return newTime;
-        });
-      }, 1000);
-    } else {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
-    }
-    
-    return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleTimeUpdate = () => {
+      const t = video.currentTime;
+      setCurrentTime(t);
+      const subtitle = story.subtitles.find(sub => t >= sub.start && t <= sub.end);
+      setCurrentSubtitle(subtitle?.text || '');
     };
-  }, [isPlaying, story, onStoryEnd]);
+
+    const handleLoadedMetadata = () => {
+      setDuration(video.duration || 0);
+    };
+
+    const handleEnded = () => {
+      setIsPlaying(false);
+      onStoryEnd();
+    };
+
+    const handlePlay = () => setIsPlaying(true);
+    const handlePause = () => setIsPlaying(false);
+
+    video.addEventListener('timeupdate', handleTimeUpdate);
+    video.addEventListener('loadedmetadata', handleLoadedMetadata);
+    video.addEventListener('ended', handleEnded);
+    video.addEventListener('play', handlePlay);
+    video.addEventListener('pause', handlePause);
+
+    return () => {
+      video.removeEventListener('timeupdate', handleTimeUpdate);
+      video.removeEventListener('loadedmetadata', handleLoadedMetadata);
+      video.removeEventListener('ended', handleEnded);
+      video.removeEventListener('play', handlePlay);
+      video.removeEventListener('pause', handlePause);
+    };
+  }, [story, onStoryEnd]);
 
   const togglePlay = () => {
-    setIsPlaying(!isPlaying);
+    const video = videoRef.current;
+    if (!video) return;
+    if (video.paused) {
+      void video.play();
+    } else {
+      video.pause();
+    }
+  };
+
+  const videoSrc = `/generated_content/videos/${story.id}_video.mp4`;
+
+  const formatTime = (seconds: number) => {
+    const m = Math.floor(seconds / 60);
+    const s = Math.floor(seconds % 60);
+    return `${m}:${s.toString().padStart(2, '0')}`;
   };
 
   return (
@@ -78,19 +89,15 @@ const StoryPlayer = ({ story, onStoryEnd }: StoryPlayerProps) => {
           <div className="w-32 h-1 bg-gradient-to-r from-purple-400 to-pink-400 mx-auto rounded-full"></div>
         </div>
 
-        {/* Video/Image Display */}
+        {/* Video Display */}
         <div className="relative bg-black rounded-lg overflow-hidden aspect-video">
-          <img 
-            src={story.images[currentImageIndex]} 
-            alt={`Scene ${currentImageIndex + 1}`}
-            className="w-full h-full object-cover transition-all duration-1000 transform hover:scale-105"
+          <video
+            ref={videoRef}
+            src={videoSrc}
+            className="w-full h-full object-cover"
+            controls={false}
+            playsInline
           />
-          
-          {/* Parallax Effect Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-          
-          {/* Mystical Particles Effect */}
-          <div className="absolute inset-0 bg-[url('/particles.png')] opacity-20 animate-pulse"></div>
         </div>
         
         {/* Subtitles - Moved outside video container */}
@@ -135,12 +142,12 @@ const StoryPlayer = ({ story, onStoryEnd }: StoryPlayerProps) => {
           <div className="w-full bg-gray-700 rounded-full h-2">
             <div 
               className="bg-gradient-to-r from-purple-400 to-pink-400 h-2 rounded-full transition-all duration-300"
-              style={{ width: `${(currentTime / 30) * 100}%` }}
+              style={{ width: `${duration ? (currentTime / duration) * 100 : 0}%` }}
             ></div>
           </div>
           <div className="flex justify-between text-sm text-purple-300">
-            <span>{Math.floor(currentTime / 60)}:{(currentTime % 60).toString().padStart(2, '0')}</span>
-            <span>0:30</span>
+            <span>{formatTime(currentTime)}</span>
+            <span>{formatTime(duration)}</span>
           </div>
         </div>
 
@@ -152,7 +159,7 @@ const StoryPlayer = ({ story, onStoryEnd }: StoryPlayerProps) => {
         </div>
       </div>
 
-      <audio ref={audioRef} src={story.audioUrl} />
+      {/* Video element handles audio; no separate audio tag needed */}
     </Card>
   );
 };
