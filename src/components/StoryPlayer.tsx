@@ -91,18 +91,18 @@ const StoryPlayer = ({ story, onStoryEnd }: StoryPlayerProps) => {
           
           {/* Mystical Particles Effect */}
           <div className="absolute inset-0 bg-[url('/particles.png')] opacity-20 animate-pulse"></div>
-          
-          {/* Subtitles */}
-          {currentSubtitle && (
-            <div className="absolute bottom-4 left-4 right-4">
-              <div className="bg-black/80 rounded-lg p-3 border border-purple-400/50">
-                <p className="text-white text-center font-medium">
-                  {currentSubtitle}
-                </p>
-              </div>
-            </div>
-          )}
         </div>
+        
+        {/* Subtitles - Moved outside video container */}
+        {currentSubtitle && (
+          <div className="mt-4">
+            <div className="bg-black/80 rounded-lg p-4 border border-purple-400/50">
+              <p className="text-white text-center font-medium leading-relaxed">
+                {currentSubtitle}
+              </p>
+            </div>
+          </div>
+        )}
 
         {/* Controls */}
         <div className="flex items-center justify-center space-x-6">
@@ -145,7 +145,7 @@ const StoryPlayer = ({ story, onStoryEnd }: StoryPlayerProps) => {
         </div>
 
         {/* Story Text Preview */}
-        <div className="bg-black/30 rounded-lg p-4 border border-purple-400/20">
+        <div className="bg-black/30 rounded-lg p-4 border border-purple-400/20 mt-4">
           <p className="text-purple-100 text-sm leading-relaxed font-serif">
             {story.content.substring(0, 200)}...
           </p>

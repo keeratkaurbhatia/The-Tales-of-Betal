@@ -59,7 +59,7 @@ tts = gTTS(text=text, lang='en', tld='co.in', slow=True)  # Slower = deeper/masc
 
 ### Install Dependencies:
 ```bash
-pip install -r requirements.txt
+pip install requests pillow opencv-python moviepy huggingface-hub transformers torch diffusers elevenlabs gTTS pydub gradio
 ```
 
 ### Run the Generation Notebook:
@@ -84,8 +84,12 @@ generated_content/
 │   └── ... (6 images per story)
 ├── audio/
 │   └── wisdom-1_narration.mp3  # Male voice
-└── videos/
-    └── wisdom-1_video.mp4      # Combined with effects
+├── videos/
+│   ├── clips/                  # Individual animated clips
+│   │   ├── wisdom-1_scene_01.mp4
+│   │   ├── wisdom-1_scene_02.mp4
+│   │   └── ... (one per scene)
+│   └── wisdom-1_video.mp4      # Final stitched video
 ```
 
 ---
@@ -94,8 +98,9 @@ generated_content/
 
 ### For gTTS (Free):
 ```python
-# Current male voice setup
-generate_audio_gtts(text, filename, lang='en', tld='co.in')  # slow=True for deeper voice
+# Enhanced male voice setup with post-processing
+generate_audio_gtts(text, filename, lang='en', tld='co.in')  
+# Includes pitch lowering and normalization for masculine sound
 ```
 
 ### For ElevenLabs (Premium):
