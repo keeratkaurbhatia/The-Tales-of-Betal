@@ -10,3 +10,8 @@ elevenlabs==0.2.26
 gtts==2.4.0
 gradio==3.50.2
 numpy==1.24.3
+imageio==2.33.1
+imageio-ffmpeg==0.5.1
+tqdm==4.66.4
+accelerate==0.24.1
+safetensors==0.4.2
