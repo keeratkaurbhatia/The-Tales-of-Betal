@@ -1,0 +1,52 @@
+{
+  "id": "wisdom-1",
+  "title": "The Wise Old Man and the Three Sons",
+  "content": "Once upon a time, in a small village, there lived an old man with three sons. \n    The old man was known throughout the village for his wisdom and kindness. \n    As he grew older, he wanted to test which of his sons would inherit his wisdom.\n    He gave each son a single grain of rice and told them to make it multiply by the next full moon.\n    The first son planted it and got a small harvest. \n    The second son sold it and bought more rice. \n    But the third son gave it to a hungry child, saying that kindness multiplies in ways grain cannot.",
+  "images": [
+    "/generated_content/images/wisdom-1_scene_01.png",
+    "/generated_content/images/wisdom-1_scene_02.png",
+    "/generated_content/images/wisdom-1_scene_03.png",
+    "/generated_content/images/wisdom-1_scene_04.png",
+    "/generated_content/images/wisdom-1_scene_05.png",
+    "/generated_content/images/wisdom-1_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/wisdom-1_narration.mp3",
+  "videoUrl": "/generated_content/videos/generated_content\\videos\\wisdom-1_video.mp4",
+  "subtitles": [
+    {
+      "start": 0,
+      "end": 6.4,
+      "text": "Once upon a time, in a small village, there lived an old man with three sons."
+    },
+    {
+      "start": 6.4,
+      "end": 12.9,
+      "text": "The old man was known throughout the village for his wisdom and kindness."
+    },
+    {
+      "start": 12.9,
+      "end": 19.3,
+      "text": "As he grew older, he wanted to test which of his sons would inherit his wisdom."
+    },
+    {
+      "start": 19.3,
+      "end": 25.8,
+      "text": "He gave each son a single grain of rice and told them to make it multiply by the next full moon."
+    },
+    {
+      "start": 25.8,
+      "end": 32.2,
+      "text": "The first son planted it and got a small harvest."
+    },
+    {
+      "start": 32.2,
+      "end": 38.7,
+      "text": "The second son sold it and bought more rice."
+    },
+    {
+      "start": 38.7,
+      "end": 45.1,
+      "text": "But the third son gave it to a hungry child, saying that kindness multiplies in ways grain cannot.."
+    }
+  ]
+}
