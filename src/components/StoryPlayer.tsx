@@ -36,6 +36,9 @@ const normalizeUrl = (raw?: string | null) => {
   if (idx !== -1) {
     u = u.slice(idx);
   }
+  // 3.5) collapse duplicated generated_content path segments
+  u = u.replace(/\/generated_content\/generated_content\//g, '/generated_content/');
+  u = u.replace(/\/generated_content\/(images|videos|audio)\/generated_content\/(images|videos|audio)\//g, '/generated_content/$1/');
   // 4) ensure leading slash
   if (!u.startsWith('/')) u = '/' + u;
   return u;
@@ -133,11 +136,21 @@ const StoryPlayer = ({ story: inputStory, onStoryEnd }: StoryPlayerProps) => {
     const handlePlay = () => setIsPlaying(true);
     const handlePause = () => setIsPlaying(false);
 
+    const handleError = () => {
+      const hadVideo = Boolean((storyData as any)?.videoUrl);
+      if (hadVideo && (storyData as any)?.audioUrl) {
+        setStoryData(prev => (prev ? { ...prev, videoUrl: null } : prev));
+      } else {
+        setError('Failed to load media.');
+      }
+    };
+
     media.addEventListener('timeupdate', handleTimeUpdate);
     media.addEventListener('loadedmetadata', handleLoadedMetadata);
     media.addEventListener('ended', handleEnded);
     media.addEventListener('play', handlePlay);
     media.addEventListener('pause', handlePause);
+    media.addEventListener('error', handleError);
 
     return () => {
       media.removeEventListener('timeupdate', handleTimeUpdate);
@@ -145,6 +158,7 @@ const StoryPlayer = ({ story: inputStory, onStoryEnd }: StoryPlayerProps) => {
       media.removeEventListener('ended', handleEnded);
       media.removeEventListener('play', handlePlay);
       media.removeEventListener('pause', handlePause);
+      media.removeEventListener('error', handleError);
     };
   }, [storyData, onStoryEnd]);
 

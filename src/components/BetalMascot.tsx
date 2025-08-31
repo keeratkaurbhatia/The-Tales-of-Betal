@@ -10,15 +10,15 @@ const BetalMascot = ({ state, mood }: BetalMascotProps) => {
     <div className="flex flex-col items-center">
       <div 
         className={cn(
-          "relative w-44 h-44 transition-all duration-1000",
+          "relative w-48 h-48 transition-all duration-1000",
           state === 'flying' && "animate-bounce",
           state === 'sleeping' && "animate-pulse"
         )}
       >
         {/* Betal's Body */}
         <div className={cn(
-          "w-36 h-44 mx-auto rounded-t-full relative transition-all duration-500 shadow-[0_0_30px_-5px_rgba(168,85,247,0.35)]",
-          mood === 'angry' ? "bg-gradient-to-b from-red-400 to-red-700" : "bg-gradient-to-b from-stone-200 to-stone-500"
+          "w-40 h-48 mx-auto rounded-t-full relative transition-all duration-500 shadow-[0_0_35px_-5px_rgba(168,85,247,0.45)]",
+          mood === 'angry' ? "bg-gradient-to-b from-red-500 to-red-800" : "bg-gradient-to-b from-zinc-200 to-zinc-500"
         )}>
           
           {/* Eyes */}
@@ -31,49 +31,49 @@ const BetalMascot = ({ state, mood }: BetalMascotProps) => {
             ) : (
               <>
                 <div className={cn(
-                  "w-4 h-4 rounded-full",
-                  mood === 'angry' ? "bg-red-500" : "bg-yellow-400"
+                  "w-5 h-5 rounded-full ring-2 ring-white/20",
+                  mood === 'angry' ? "bg-red-500" : "bg-amber-300"
                 )}>
-                  <div className="w-2 h-2 bg-black rounded-full ml-1 mt-1"></div>
+                  <div className="w-2 h-2 bg-black rounded-full ml-1.5 mt-1.5"></div>
                 </div>
                 <div className={cn(
-                  "w-4 h-4 rounded-full",
-                  mood === 'angry' ? "bg-red-500" : "bg-yellow-400"
+                  "w-5 h-5 rounded-full ring-2 ring-white/20",
+                  mood === 'angry' ? "bg-red-500" : "bg-amber-300"
                 )}>
-                  <div className="w-2 h-2 bg-black rounded-full ml-1 mt-1"></div>
+                  <div className="w-2 h-2 bg-black rounded-full ml-1.5 mt-1.5"></div>
                 </div>
               </>
             )}
           </div>
 
           {/* Nose */}
-          <div className="absolute top-14 left-1/2 transform -translate-x-1/2 w-2 h-3 bg-gray-700 rounded-full"></div>
+          <div className="absolute top-14 left-1/2 transform -translate-x-1/2 w-2 h-3 bg-gray-900/80 rounded-full"></div>
 
           {/* Mouth */}
           {state !== 'sleeping' && (
             <div className={cn(
-              "absolute top-18 left-1/2 transform -translate-x-1/2 w-7 h-3 rounded-full",
-              mood === 'angry' ? "bg-red-800" : "bg-gray-800"
+              "absolute top-18 left-1/2 transform -translate-x-1/2 w-8 h-3 rounded-full",
+              mood === 'angry' ? "bg-red-900" : "bg-gray-900"
             )}></div>
           )}
 
           {/* Ancient Markings */}
-          <div className="absolute top-6 left-2 w-1 h-4 bg-amber-300 rounded-full opacity-70"></div>
-          <div className="absolute top-6 right-2 w-1 h-4 bg-amber-300 rounded-full opacity-70"></div>
-          <div className="absolute top-10 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500/10 to-pink-500/10 blur"></div>
+          <div className="absolute top-6 left-2 w-1 h-4 bg-amber-300 rounded-full opacity-80"></div>
+          <div className="absolute top-6 right-2 w-1 h-4 bg-amber-300 rounded-full opacity-80"></div>
+          <div className="absolute top-10 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-gradient-to-tr from-purple-500/15 to-pink-500/15 blur"></div>
           
           {/* Mystical Aura */}
           {state !== 'sleeping' && (
             <div className={cn(
               "absolute inset-0 rounded-t-full blur-sm",
-              mood === 'angry' ? "bg-red-400/25" : "bg-purple-400/25"
+              mood === 'angry' ? "bg-red-400/30" : "bg-purple-400/30"
             )}></div>
           )}
         </div>
 
         {/* Floating Effect for Awake State */}
         {state === 'awake' && (
-          <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-5 bg-purple-400/30 rounded-full blur-md animate-pulse"></div>
+          <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-6 bg-purple-400/30 rounded-full blur-md animate-pulse"></div>
         )}
       </div>
 
