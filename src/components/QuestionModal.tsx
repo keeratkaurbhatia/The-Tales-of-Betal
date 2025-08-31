@@ -13,22 +13,25 @@ interface QuestionModalProps {
     moral: string;
   };
   betalMood: 'calm' | 'angry';
-  onAnswer: (answered: boolean) => void;
+  onAnswer: (result: { outcome: 'correct' | 'incorrect' | 'dont_know'; selectedIndex?: number }) => void;
+  dontKnowUsed?: number;
+  dontKnowLimit?: number;
 }
 
-const QuestionModal = ({ story, betalMood, onAnswer }: QuestionModalProps) => {
+const QuestionModal = ({ story, betalMood, onAnswer, dontKnowUsed = 0, dontKnowLimit = 3 }: QuestionModalProps) => {
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showMoral, setShowMoral] = useState(false);
 
   const handleAnswerSelect = (answerIndex: number) => {
     setSelectedAnswer(answerIndex);
     setShowMoral(true);
-    onAnswer(true);
+    const isCorrect = answerIndex === story.correctAnswer;
+    onAnswer({ outcome: isCorrect ? 'correct' : 'incorrect', selectedIndex: answerIndex });
   };
 
   const handleDontKnow = () => {
     setShowMoral(true);
-    onAnswer(false);
+    onAnswer({ outcome: 'dont_know' });
   };
 
   return (
@@ -70,13 +73,19 @@ const QuestionModal = ({ story, betalMood, onAnswer }: QuestionModalProps) => {
 
               {/* Don't Know Button */}
               <div className="pt-4 border-t border-purple-400/30">
-                <Button
-                  onClick={handleDontKnow}
-                  variant="ghost"
-                  className="text-purple-300 hover:text-white hover:bg-purple-800/30"
-                >
-                  I don't know the answer
-                </Button>
+                <div className="flex items-center justify-between">
+                  <div className="text-xs text-purple-300">
+                    I don't know uses left: {Math.max(0, (dontKnowLimit ?? 3) - (dontKnowUsed ?? 0))}
+                  </div>
+                  <Button
+                    onClick={handleDontKnow}
+                    variant="ghost"
+                    disabled={(dontKnowUsed ?? 0) >= (dontKnowLimit ?? 3)}
+                    className="text-purple-300 hover:text-white hover:bg-purple-800/30 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    I don't know the answer
+                  </Button>
+                </div>
               </div>
             </>
           ) : (
