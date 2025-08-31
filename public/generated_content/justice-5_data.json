@@ -1,0 +1,53 @@
+{
+  "id": "justice-5",
+  "title": "The Truthful Witness",
+  "theme": "justice",
+  "content": "In a court case, a poor man was accused of stealing from a rich merchant. Many witnesses came forward, but their stories contradicted each other. Finally, a simple washerman stepped forward. I saw everything he said quietly. The merchant dropped his purse, and this man picked it up and ran after him to return it. But the merchant was in his carriage and didn't hear him calling. The rich merchant, embarrassed by his false accusation, not only apologized but rewarded the honest man for his integrity.",
+  "images": [
+    "/generated_content/images/justice-5_scene_01.png",
+    "/generated_content/images/justice-5_scene_02.png",
+    "/generated_content/images/justice-5_scene_03.png",
+    "/generated_content/images/justice-5_scene_04.png",
+    "/generated_content/images/justice-5_scene_05.png",
+    "/generated_content/images/justice-5_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/justice-5_narration.mp3",
+  "videoUrl": "/generated_content/videos/justice-5_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 6.0,
+      "text": "In a court case, a poor man was accused of stealing from a rich merchant."
+    },
+    {
+      "start": 6.0,
+      "end": 10.0,
+      "text": "Many witnesses came forward, but their stories contradicted each other."
+    },
+    {
+      "start": 10.0,
+      "end": 13.0,
+      "text": "Finally, a simple washerman stepped forward."
+    },
+    {
+      "start": 13.0,
+      "end": 16.0,
+      "text": "I saw everything he said quietly."
+    },
+    {
+      "start": 16.0,
+      "end": 23.2,
+      "text": "The merchant dropped his purse, and this man picked it up and ran after him to return it."
+    },
+    {
+      "start": 23.2,
+      "end": 28.0,
+      "text": "But the merchant was in his carriage and didn't hear him calling."
+    },
+    {
+      "start": 28.0,
+      "end": 35.6,
+      "text": "The rich merchant, embarrassed by his false accusation, not only apologized but rewarded the honest man for his integrity."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "justice-1",
+  "title": "The Honest Merchant's Scale",
+  "theme": "justice",
+  "content": "A merchant in the marketplace was known for his honest scales while others cheated customers. When a drought came, dishonest merchants hoarded grain to sell at high prices. The honest merchant sold his grain at fair prices, even when he could have made more profit. Soon, his was the only shop people trusted. When the rains returned and grain became plentiful again, everyone remembered his fairness. His business prospered while the dishonest merchants lost their customers forever.",
+  "images": [
+    "/generated_content/images/justice-1_scene_01.png",
+    "/generated_content/images/justice-1_scene_02.png",
+    "/generated_content/images/justice-1_scene_03.png",
+    "/generated_content/images/justice-1_scene_04.png",
+    "/generated_content/images/justice-1_scene_05.png",
+    "/generated_content/images/justice-1_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/justice-1_narration.mp3",
+  "videoUrl": "/generated_content/videos/justice-1_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 6.0,
+      "text": "A merchant in the marketplace was known for his honest scales while others cheated customers."
+    },
+    {
+      "start": 6.0,
+      "end": 11.2,
+      "text": "When a drought came, dishonest merchants hoarded grain to sell at high prices."
+    },
+    {
+      "start": 11.2,
+      "end": 18.0,
+      "text": "The honest merchant sold his grain at fair prices, even when he could have made more profit."
+    },
+    {
+      "start": 18.0,
+      "end": 21.2,
+      "text": "Soon, his was the only shop people trusted."
+    },
+    {
+      "start": 21.2,
+      "end": 26.4,
+      "text": "When the rains returned and grain became plentiful again, everyone remembered his fairness."
+    },
+    {
+      "start": 26.4,
+      "end": 30.8,
+      "text": "His business prospered while the dishonest merchants lost their customers forever."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "justice-3",
+  "title": "The Stolen Mangoes",
+  "theme": "justice",
+  "content": "Two boys, Ravi and Suresh, were accused of stealing mangoes from a neighbor's tree. The village elder investigated carefully. Ravi immediately blamed Suresh and demanded punishment for him. Suresh remained quiet but showed the elder his hands they were clean, while Ravi's were stained with mango juice. Moreover, Suresh had been helping his sick mother all morning, as several neighbors confirmed. The elder realized that the loudest accuser was often the guilty one trying to deflect blame.",
+  "images": [
+    "/generated_content/images/justice-3_scene_01.png",
+    "/generated_content/images/justice-3_scene_02.png",
+    "/generated_content/images/justice-3_scene_03.png",
+    "/generated_content/images/justice-3_scene_04.png",
+    "/generated_content/images/justice-3_scene_05.png",
+    "/generated_content/images/justice-3_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/justice-3_narration.mp3",
+  "videoUrl": "/generated_content/videos/justice-3_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 5.6,
+      "text": "Two boys, Ravi and Suresh, were accused of stealing mangoes from a neighbor's tree."
+    },
+    {
+      "start": 5.6,
+      "end": 8.6,
+      "text": "The village elder investigated carefully."
+    },
+    {
+      "start": 8.6,
+      "end": 12.2,
+      "text": "Ravi immediately blamed Suresh and demanded punishment for him."
+    },
+    {
+      "start": 12.2,
+      "end": 19.8,
+      "text": "Suresh remained quiet but showed the elder his hands they were clean, while Ravi's were stained with mango juice."
+    },
+    {
+      "start": 19.8,
+      "end": 25.4,
+      "text": "Moreover, Suresh had been helping his sick mother all morning, as several neighbors confirmed."
+    },
+    {
+      "start": 25.4,
+      "end": 31.8,
+      "text": "The elder realized that the loudest accuser was often the guilty one trying to deflect blame."
+    }
+  ]
+}

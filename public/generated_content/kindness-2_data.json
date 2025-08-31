@@ -1,0 +1,48 @@
+{
+  "id": "kindness-2",
+  "title": "The Cobbler's Gift",
+  "theme": "kindness",
+  "content": "A poor cobbler worked day and night to feed his family. One winter evening, a child came to his shop with torn shoes and no money. The cobbler could have turned him away, but instead, he mended the shoes and gave the child warm socks too. That night, the cobbler found a bag of gold coins outside his door. A note read Kindness to children is kindness to the future. This gift is from someone whose childhood you just brightened.",
+  "images": [
+    "/generated_content/images/kindness-2_scene_01.png",
+    "/generated_content/images/kindness-2_scene_02.png",
+    "/generated_content/images/kindness-2_scene_03.png",
+    "/generated_content/images/kindness-2_scene_04.png",
+    "/generated_content/images/kindness-2_scene_05.png",
+    "/generated_content/images/kindness-2_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/kindness-2_narration.mp3",
+  "videoUrl": "/generated_content/videos/kindness-2_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 4.4,
+      "text": "A poor cobbler worked day and night to feed his family."
+    },
+    {
+      "start": 4.4,
+      "end": 10.4,
+      "text": "One winter evening, a child came to his shop with torn shoes and no money."
+    },
+    {
+      "start": 10.4,
+      "end": 18.4,
+      "text": "The cobbler could have turned him away, but instead, he mended the shoes and gave the child warm socks too."
+    },
+    {
+      "start": 18.4,
+      "end": 23.6,
+      "text": "That night, the cobbler found a bag of gold coins outside his door."
+    },
+    {
+      "start": 23.6,
+      "end": 28.0,
+      "text": "A note read Kindness to children is kindness to the future."
+    },
+    {
+      "start": 28.0,
+      "end": 32.0,
+      "text": "This gift is from someone whose childhood you just brightened."
+    }
+  ]
+}

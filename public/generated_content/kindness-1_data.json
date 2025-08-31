@@ -1,0 +1,53 @@
+{
+  "id": "kindness-1",
+  "title": "The Magic Pot of the Poor Woman",
+  "theme": "kindness",
+  "content": "In a poor village lived a woman with nothing but a small clay pot. One day, a hungry traveler knocked on her door. Though she had only a handful of rice, she shared half with him. The traveler revealed he was a sage and blessed her pot. From that day, the pot never emptied whatever she put in multiplied. But the woman never kept it all for herself. She fed every hungry person in the village, and her kindness fed hundreds.",
+  "images": [
+    "/generated_content/images/kindness-1_scene_01.png",
+    "/generated_content/images/kindness-1_scene_02.png",
+    "/generated_content/images/kindness-1_scene_03.png",
+    "/generated_content/images/kindness-1_scene_04.png",
+    "/generated_content/images/kindness-1_scene_05.png",
+    "/generated_content/images/kindness-1_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/kindness-1_narration.mp3",
+  "videoUrl": "/generated_content/videos/kindness-1_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 5.6,
+      "text": "In a poor village lived a woman with nothing but a small clay pot."
+    },
+    {
+      "start": 5.6,
+      "end": 9.2,
+      "text": "One day, a hungry traveler knocked on her door."
+    },
+    {
+      "start": 9.2,
+      "end": 14.4,
+      "text": "Though she had only a handful of rice, she shared half with him."
+    },
+    {
+      "start": 14.4,
+      "end": 18.8,
+      "text": "The traveler revealed he was a sage and blessed her pot."
+    },
+    {
+      "start": 18.8,
+      "end": 23.6,
+      "text": "From that day, the pot never emptied whatever she put in multiplied."
+    },
+    {
+      "start": 23.6,
+      "end": 27.2,
+      "text": "But the woman never kept it all for herself."
+    },
+    {
+      "start": 27.2,
+      "end": 32.4,
+      "text": "She fed every hungry person in the village, and her kindness fed hundreds."
+    }
+  ]
+}

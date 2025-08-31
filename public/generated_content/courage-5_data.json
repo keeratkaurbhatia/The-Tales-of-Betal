@@ -1,0 +1,58 @@
+{
+  "id": "courage-5",
+  "title": "The Merchant's Daughter and the Bandits",
+  "theme": "courage",
+  "content": "A merchant's daughter was traveling with a caravan when bandits attacked. While everyone else hid, she noticed the bandits were thin and desperate. Instead of cowering, she approached their leader and offered to share the caravan's food. We are not your enemies she said. We are all trying to survive. Her unexpected courage and compassion touched the bandit leader's heart. He called off the attack, and his men shared a meal with the caravan. From that day, those bandits became protectors of travelers instead of threats.",
+  "images": [
+    "/generated_content/images/courage-5_scene_01.png",
+    "/generated_content/images/courage-5_scene_02.png",
+    "/generated_content/images/courage-5_scene_03.png",
+    "/generated_content/images/courage-5_scene_04.png",
+    "/generated_content/images/courage-5_scene_05.png",
+    "/generated_content/images/courage-5_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/courage-5_narration.mp3",
+  "videoUrl": "/generated_content/videos/courage-5_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 4.4,
+      "text": "A merchant's daughter was traveling with a caravan when bandits attacked."
+    },
+    {
+      "start": 4.4,
+      "end": 9.2,
+      "text": "While everyone else hid, she noticed the bandits were thin and desperate."
+    },
+    {
+      "start": 9.2,
+      "end": 14.8,
+      "text": "Instead of cowering, she approached their leader and offered to share the caravan's food."
+    },
+    {
+      "start": 14.8,
+      "end": 17.8,
+      "text": "We are not your enemies she said."
+    },
+    {
+      "start": 17.8,
+      "end": 20.8,
+      "text": "We are all trying to survive."
+    },
+    {
+      "start": 20.8,
+      "end": 24.8,
+      "text": "Her unexpected courage and compassion touched the bandit leader's heart."
+    },
+    {
+      "start": 24.8,
+      "end": 30.4,
+      "text": "He called off the attack, and his men shared a meal with the caravan."
+    },
+    {
+      "start": 30.4,
+      "end": 35.2,
+      "text": "From that day, those bandits became protectors of travelers instead of threats."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "courage-4",
+  "title": "The Lighthouse Keeper's Son",
+  "theme": "courage",
+  "content": "During a terrible storm, the lighthouse keeper fell ill and could not light the beacon. Ships were approaching the dangerous rocks in the darkness. His young son, though afraid of heights and storms, climbed the tall lighthouse tower. Fighting against fierce winds and rain, he lit the great lamp. Throughout the night, he kept the light burning, guiding ship after ship to safety. By dawn, he had saved dozens of lives, proving that courage grows when others depend on us.",
+  "images": [
+    "/generated_content/images/courage-4_scene_01.png",
+    "/generated_content/images/courage-4_scene_02.png",
+    "/generated_content/images/courage-4_scene_03.png",
+    "/generated_content/images/courage-4_scene_04.png",
+    "/generated_content/images/courage-4_scene_05.png",
+    "/generated_content/images/courage-4_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/courage-4_narration.mp3",
+  "videoUrl": "/generated_content/videos/courage-4_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 6.0,
+      "text": "During a terrible storm, the lighthouse keeper fell ill and could not light the beacon."
+    },
+    {
+      "start": 6.0,
+      "end": 9.6,
+      "text": "Ships were approaching the dangerous rocks in the darkness."
+    },
+    {
+      "start": 9.6,
+      "end": 15.2,
+      "text": "His young son, though afraid of heights and storms, climbed the tall lighthouse tower."
+    },
+    {
+      "start": 15.2,
+      "end": 19.6,
+      "text": "Fighting against fierce winds and rain, he lit the great lamp."
+    },
+    {
+      "start": 19.6,
+      "end": 25.2,
+      "text": "Throughout the night, he kept the light burning, guiding ship after ship to safety."
+    },
+    {
+      "start": 25.2,
+      "end": 32.0,
+      "text": "By dawn, he had saved dozens of lives, proving that courage grows when others depend on us."
+    }
+  ]
+}

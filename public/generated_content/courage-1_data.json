@@ -1,0 +1,48 @@
+{
+  "id": "courage-1",
+  "title": "The Little Sparrow and the Storm",
+  "theme": "courage",
+  "content": "A little sparrow lived in a great banyan tree near a village. When a terrible storm threatened to destroy the village, all the bigger birds flew away to safety. But the little sparrow noticed an old woman who couldn't flee. Despite being tiny, the sparrow decided to help. Through the night, it flew back and forth, warning villagers and guiding them to safety. By morning, the sparrow had saved many lives, proving that courage isn't about size it's about the size of your heart.",
+  "images": [
+    "/generated_content/images/courage-1_scene_01.png",
+    "/generated_content/images/courage-1_scene_02.png",
+    "/generated_content/images/courage-1_scene_03.png",
+    "/generated_content/images/courage-1_scene_04.png",
+    "/generated_content/images/courage-1_scene_05.png",
+    "/generated_content/images/courage-1_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/courage-1_narration.mp3",
+  "videoUrl": "/generated_content/videos/courage-1_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 4.8,
+      "text": "A little sparrow lived in a great banyan tree near a village."
+    },
+    {
+      "start": 4.8,
+      "end": 11.6,
+      "text": "When a terrible storm threatened to destroy the village, all the bigger birds flew away to safety."
+    },
+    {
+      "start": 11.6,
+      "end": 16.0,
+      "text": "But the little sparrow noticed an old woman who couldn't flee."
+    },
+    {
+      "start": 16.0,
+      "end": 19.2,
+      "text": "Despite being tiny, the sparrow decided to help."
+    },
+    {
+      "start": 19.2,
+      "end": 25.2,
+      "text": "Through the night, it flew back and forth, warning villagers and guiding them to safety."
+    },
+    {
+      "start": 25.2,
+      "end": 33.2,
+      "text": "By morning, the sparrow had saved many lives, proving that courage isn't about size it's about the size of your heart."
+    }
+  ]
+}

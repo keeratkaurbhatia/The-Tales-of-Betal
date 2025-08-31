@@ -1,0 +1,53 @@
+{
+  "id": "kindness-3",
+  "title": "The Water Bearer's Lesson",
+  "theme": "kindness",
+  "content": "A water bearer carried two pots daily from the river to his master's house. One pot was perfect, the other had a crack and leaked water. The cracked pot felt ashamed and apologized for its flaw. The water bearer smiled and showed the pot the path they walked. On the side where the cracked pot hung, beautiful flowers bloomed, watered by the leaking drops. Your flaw he said has created beauty for everyone who walks this path. Even our imperfections can bring joy to others.",
+  "images": [
+    "/generated_content/images/kindness-3_scene_01.png",
+    "/generated_content/images/kindness-3_scene_02.png",
+    "/generated_content/images/kindness-3_scene_03.png",
+    "/generated_content/images/kindness-3_scene_04.png",
+    "/generated_content/images/kindness-3_scene_05.png",
+    "/generated_content/images/kindness-3_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/kindness-3_narration.mp3",
+  "videoUrl": "/generated_content/videos/kindness-3_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 5.6,
+      "text": "A water bearer carried two pots daily from the river to his master's house."
+    },
+    {
+      "start": 5.6,
+      "end": 10.4,
+      "text": "One pot was perfect, the other had a crack and leaked water."
+    },
+    {
+      "start": 10.4,
+      "end": 14.4,
+      "text": "The cracked pot felt ashamed and apologized for its flaw."
+    },
+    {
+      "start": 14.4,
+      "end": 19.2,
+      "text": "The water bearer smiled and showed the pot the path they walked."
+    },
+    {
+      "start": 19.2,
+      "end": 25.6,
+      "text": "On the side where the cracked pot hung, beautiful flowers bloomed, watered by the leaking drops."
+    },
+    {
+      "start": 25.6,
+      "end": 30.8,
+      "text": "Your flaw he said has created beauty for everyone who walks this path."
+    },
+    {
+      "start": 30.8,
+      "end": 34.0,
+      "text": "Even our imperfections can bring joy to others."
+    }
+  ]
+}

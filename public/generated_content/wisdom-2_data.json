@@ -1,0 +1,63 @@
+{
+  "id": "wisdom-2",
+  "title": "The Scholar and the Boatman",
+  "theme": "wisdom",
+  "content": "A learned scholar was crossing a river with a simple boatman. The scholar boasted about his knowledge of astronomy, mathematics, and philosophy. Have you studied the stars he asked. No said the boatman. Then half your life is wasted declared the scholar. Suddenly, the boat hit a rock and began to sink. Can you swim asked the boatman urgently. No replied the terrified scholar. Then your whole life is wasted said the boatman as he swam them both to safety.",
+  "images": [
+    "/generated_content/images/wisdom-2_scene_01.png",
+    "/generated_content/images/wisdom-2_scene_02.png",
+    "/generated_content/images/wisdom-2_scene_03.png",
+    "/generated_content/images/wisdom-2_scene_04.png",
+    "/generated_content/images/wisdom-2_scene_05.png",
+    "/generated_content/images/wisdom-2_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/wisdom-2_narration.mp3",
+  "videoUrl": "/generated_content/videos/wisdom-2_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 4.4,
+      "text": "A learned scholar was crossing a river with a simple boatman."
+    },
+    {
+      "start": 4.4,
+      "end": 8.8,
+      "text": "The scholar boasted about his knowledge of astronomy, mathematics, and philosophy."
+    },
+    {
+      "start": 8.8,
+      "end": 11.8,
+      "text": "Have you studied the stars he asked."
+    },
+    {
+      "start": 11.8,
+      "end": 14.8,
+      "text": "No said the boatman."
+    },
+    {
+      "start": 14.8,
+      "end": 18.4,
+      "text": "Then half your life is wasted declared the scholar."
+    },
+    {
+      "start": 18.4,
+      "end": 22.4,
+      "text": "Suddenly, the boat hit a rock and began to sink."
+    },
+    {
+      "start": 22.4,
+      "end": 25.4,
+      "text": "Can you swim asked the boatman urgently."
+    },
+    {
+      "start": 25.4,
+      "end": 28.4,
+      "text": "No replied the terrified scholar."
+    },
+    {
+      "start": 28.4,
+      "end": 34.8,
+      "text": "Then your whole life is wasted said the boatman as he swam them both to safety."
+    }
+  ]
+}

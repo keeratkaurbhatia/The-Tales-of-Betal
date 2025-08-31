@@ -1,0 +1,53 @@
+{
+  "id": "justice-2",
+  "title": "The King's Test of Truth",
+  "theme": "justice",
+  "content": "A king wanted to find the most honest person in his kingdom to be his advisor. He disguised himself as a poor beggar and went from house to house asking for help. Most people turned him away or gave him scraps. But one humble farmer welcomed him warmly, shared his simple meal, and offered his own bed. When the king revealed his identity, the farmer was shocked. I helped you not because you were a king said the farmer but because you were a human in need. The king found his advisor.",
+  "images": [
+    "/generated_content/images/justice-2_scene_01.png",
+    "/generated_content/images/justice-2_scene_02.png",
+    "/generated_content/images/justice-2_scene_03.png",
+    "/generated_content/images/justice-2_scene_04.png",
+    "/generated_content/images/justice-2_scene_05.png",
+    "/generated_content/images/justice-2_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/justice-2_narration.mp3",
+  "videoUrl": "/generated_content/videos/justice-2_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 6.4,
+      "text": "A king wanted to find the most honest person in his kingdom to be his advisor."
+    },
+    {
+      "start": 6.4,
+      "end": 12.8,
+      "text": "He disguised himself as a poor beggar and went from house to house asking for help."
+    },
+    {
+      "start": 12.8,
+      "end": 16.4,
+      "text": "Most people turned him away or gave him scraps."
+    },
+    {
+      "start": 16.4,
+      "end": 22.8,
+      "text": "But one humble farmer welcomed him warmly, shared his simple meal, and offered his own bed."
+    },
+    {
+      "start": 22.8,
+      "end": 26.8,
+      "text": "When the king revealed his identity, the farmer was shocked."
+    },
+    {
+      "start": 26.8,
+      "end": 34.8,
+      "text": "I helped you not because you were a king said the farmer but because you were a human in need."
+    },
+    {
+      "start": 34.8,
+      "end": 37.8,
+      "text": "The king found his advisor."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "courage-3",
+  "title": "The Girl Who Faced the Tiger",
+  "theme": "courage",
+  "content": "A young girl was walking through the forest when she encountered a fierce tiger blocking her path. Instead of running in panic, she remembered her grandmother's words Face your fears with respect, not aggression. She stood still, looked the tiger in the eyes, and spoke softly, Great tiger, I mean no harm to your domain. I seek only safe passage. The tiger, surprised by her calm courage, stepped aside and let her pass. Her bravery and respect had turned a predator into a protector.",
+  "images": [
+    "/generated_content/images/courage-3_scene_01.png",
+    "/generated_content/images/courage-3_scene_02.png",
+    "/generated_content/images/courage-3_scene_03.png",
+    "/generated_content/images/courage-3_scene_04.png",
+    "/generated_content/images/courage-3_scene_05.png",
+    "/generated_content/images/courage-3_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/courage-3_narration.mp3",
+  "videoUrl": "/generated_content/videos/courage-3_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 6.8,
+      "text": "A young girl was walking through the forest when she encountered a fierce tiger blocking her path."
+    },
+    {
+      "start": 6.8,
+      "end": 13.6,
+      "text": "Instead of running in panic, she remembered her grandmother's words Face your fears with respect, not aggression."
+    },
+    {
+      "start": 13.6,
+      "end": 21.6,
+      "text": "She stood still, looked the tiger in the eyes, and spoke softly, Great tiger, I mean no harm to your domain."
+    },
+    {
+      "start": 21.6,
+      "end": 24.6,
+      "text": "I seek only safe passage."
+    },
+    {
+      "start": 24.6,
+      "end": 29.8,
+      "text": "The tiger, surprised by her calm courage, stepped aside and let her pass."
+    },
+    {
+      "start": 29.8,
+      "end": 34.2,
+      "text": "Her bravery and respect had turned a predator into a protector."
+    }
+  ]
+}

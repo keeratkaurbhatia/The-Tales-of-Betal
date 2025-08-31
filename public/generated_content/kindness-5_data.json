@@ -1,0 +1,58 @@
+{
+  "id": "kindness-5",
+  "title": "The Healing Garden",
+  "theme": "kindness",
+  "content": "An old woman tended a small garden behind her hut. Whenever someone in the village fell ill, she would freely give her healing herbs. A greedy merchant offered to buy her entire garden for a large sum. Think of the wealth he said. The woman smiled and refused. My garden's true value is not in gold, but in the health and happiness it brings to my neighbors. Some treasures lose their power when sold. The merchant left confused, but the villagers understood her wisdom.",
+  "images": [
+    "/generated_content/images/kindness-5_scene_01.png",
+    "/generated_content/images/kindness-5_scene_02.png",
+    "/generated_content/images/kindness-5_scene_03.png",
+    "/generated_content/images/kindness-5_scene_04.png",
+    "/generated_content/images/kindness-5_scene_05.png",
+    "/generated_content/images/kindness-5_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/kindness-5_narration.mp3",
+  "videoUrl": "/generated_content/videos/kindness-5_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 4.0,
+      "text": "An old woman tended a small garden behind her hut."
+    },
+    {
+      "start": 4.0,
+      "end": 9.6,
+      "text": "Whenever someone in the village fell ill, she would freely give her healing herbs."
+    },
+    {
+      "start": 9.6,
+      "end": 14.8,
+      "text": "A greedy merchant offered to buy her entire garden for a large sum."
+    },
+    {
+      "start": 14.8,
+      "end": 17.8,
+      "text": "Think of the wealth he said."
+    },
+    {
+      "start": 17.8,
+      "end": 20.8,
+      "text": "The woman smiled and refused."
+    },
+    {
+      "start": 20.8,
+      "end": 28.4,
+      "text": "My garden's true value is not in gold, but in the health and happiness it brings to my neighbors."
+    },
+    {
+      "start": 28.4,
+      "end": 31.4,
+      "text": "Some treasures lose their power when sold."
+    },
+    {
+      "start": 31.4,
+      "end": 35.4,
+      "text": "The merchant left confused, but the villagers understood her wisdom."
+    }
+  ]
+}

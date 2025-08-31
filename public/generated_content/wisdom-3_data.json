@@ -1,0 +1,68 @@
+{
+  "id": "wisdom-3",
+  "title": "The Two Pots",
+  "theme": "wisdom",
+  "content": "Two pots hung from a pole carried by a water bearer. One was made of brass, shiny and proud. The other was made of clay, humble and simple. The brass pot constantly boasted about its beauty and durability. Look how I shine it said. You are so plain and fragile. The clay pot remained silent. One day, they knocked against each other. The brass pot was unharmed, but it realized that if they kept colliding, the clay pot would break. From that day, the brass pot learned to be gentle and protective of its companion.",
+  "images": [
+    "/generated_content/images/wisdom-3_scene_01.png",
+    "/generated_content/images/wisdom-3_scene_02.png",
+    "/generated_content/images/wisdom-3_scene_03.png",
+    "/generated_content/images/wisdom-3_scene_04.png",
+    "/generated_content/images/wisdom-3_scene_05.png",
+    "/generated_content/images/wisdom-3_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/wisdom-3_narration.mp3",
+  "videoUrl": "/generated_content/videos/wisdom-3_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 4.4,
+      "text": "Two pots hung from a pole carried by a water bearer."
+    },
+    {
+      "start": 4.4,
+      "end": 7.6,
+      "text": "One was made of brass, shiny and proud."
+    },
+    {
+      "start": 7.6,
+      "end": 11.2,
+      "text": "The other was made of clay, humble and simple."
+    },
+    {
+      "start": 11.2,
+      "end": 15.2,
+      "text": "The brass pot constantly boasted about its beauty and durability."
+    },
+    {
+      "start": 15.2,
+      "end": 18.2,
+      "text": "Look how I shine it said."
+    },
+    {
+      "start": 18.2,
+      "end": 21.2,
+      "text": "You are so plain and fragile."
+    },
+    {
+      "start": 21.2,
+      "end": 24.2,
+      "text": "The clay pot remained silent."
+    },
+    {
+      "start": 24.2,
+      "end": 27.2,
+      "text": "One day, they knocked against each other."
+    },
+    {
+      "start": 27.2,
+      "end": 34.4,
+      "text": "The brass pot was unharmed, but it realized that if they kept colliding, the clay pot would break."
+    },
+    {
+      "start": 34.4,
+      "end": 40.4,
+      "text": "From that day, the brass pot learned to be gentle and protective of its companion."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "kindness-4",
+  "title": "The Baker's Daily Bread",
+  "theme": "kindness",
+  "content": "A baker noticed a hungry street child watching his shop every morning. Instead of shooing the child away, he began leaving a small loaf outside his door each day. The child never knew who left it, but it kept him alive. Years later, that child became a successful merchant. He returned to find the old baker and built him a grand new bakery. You fed my body when I was hungry he said now let me feed your dreams.",
+  "images": [
+    "/generated_content/images/kindness-4_scene_01.png",
+    "/generated_content/images/kindness-4_scene_02.png",
+    "/generated_content/images/kindness-4_scene_03.png",
+    "/generated_content/images/kindness-4_scene_04.png",
+    "/generated_content/images/kindness-4_scene_05.png",
+    "/generated_content/images/kindness-4_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/kindness-4_narration.mp3",
+  "videoUrl": "/generated_content/videos/kindness-4_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 4.8,
+      "text": "A baker noticed a hungry street child watching his shop every morning."
+    },
+    {
+      "start": 4.8,
+      "end": 11.6,
+      "text": "Instead of shooing the child away, he began leaving a small loaf outside his door each day."
+    },
+    {
+      "start": 11.6,
+      "end": 16.4,
+      "text": "The child never knew who left it, but it kept him alive."
+    },
+    {
+      "start": 16.4,
+      "end": 19.6,
+      "text": "Years later, that child became a successful merchant."
+    },
+    {
+      "start": 19.6,
+      "end": 25.2,
+      "text": "He returned to find the old baker and built him a grand new bakery."
+    },
+    {
+      "start": 25.2,
+      "end": 31.6,
+      "text": "You fed my body when I was hungry he said now let me feed your dreams."
+    }
+  ]
+}

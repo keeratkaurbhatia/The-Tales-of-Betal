@@ -1,0 +1,48 @@
+{
+  "id": "courage-2",
+  "title": "The Young Drummer Boy",
+  "theme": "courage",
+  "content": "In an ancient kingdom, a young drummer boy served in the royal army. When enemy forces surrounded their camp at night, the experienced soldiers were filled with fear. The boy, though scared, remembered his duty. He climbed the highest tower and beat his drum with all his might, creating echoes that made their small force sound like a vast army. The enemy, thinking they were outnumbered, retreated. The boy's courage and quick thinking saved the entire kingdom.",
+  "images": [
+    "/generated_content/images/courage-2_scene_01.png",
+    "/generated_content/images/courage-2_scene_02.png",
+    "/generated_content/images/courage-2_scene_03.png",
+    "/generated_content/images/courage-2_scene_04.png",
+    "/generated_content/images/courage-2_scene_05.png",
+    "/generated_content/images/courage-2_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/courage-2_narration.mp3",
+  "videoUrl": "/generated_content/videos/courage-2_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 5.2,
+      "text": "In an ancient kingdom, a young drummer boy served in the royal army."
+    },
+    {
+      "start": 5.2,
+      "end": 11.2,
+      "text": "When enemy forces surrounded their camp at night, the experienced soldiers were filled with fear."
+    },
+    {
+      "start": 11.2,
+      "end": 14.2,
+      "text": "The boy, though scared, remembered his duty."
+    },
+    {
+      "start": 14.2,
+      "end": 22.2,
+      "text": "He climbed the highest tower and beat his drum with all his might, creating echoes that made their small force sound like a vast army."
+    },
+    {
+      "start": 22.2,
+      "end": 25.2,
+      "text": "The enemy, thinking they were outnumbered, retreated."
+    },
+    {
+      "start": 25.2,
+      "end": 29.2,
+      "text": "The boy's courage and quick thinking saved the entire kingdom."
+    }
+  ]
+}

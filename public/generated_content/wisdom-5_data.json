@@ -1,0 +1,58 @@
+{
+  "id": "wisdom-5",
+  "title": "The Farmer and the Snake",
+  "theme": "wisdom",
+  "content": "A kind farmer found a snake freezing in the snow. Taking pity, he brought it home and warmed it by his fire. As the snake revived, it bit the farmer. Why did you bite me after I saved you asked the dying farmer. It is my nature replied the snake. You knew what I was when you picked me up. A wise old woman who witnessed this said, Kindness is a virtue, but wisdom knows when and where to apply it. Not all who suffer deserve our help if they will use it to harm others.",
+  "images": [
+    "/generated_content/images/wisdom-5_scene_01.png",
+    "/generated_content/images/wisdom-5_scene_02.png",
+    "/generated_content/images/wisdom-5_scene_03.png",
+    "/generated_content/images/wisdom-5_scene_04.png",
+    "/generated_content/images/wisdom-5_scene_05.png",
+    "/generated_content/images/wisdom-5_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/wisdom-5_narration.mp3",
+  "videoUrl": "/generated_content/videos/wisdom-5_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 4.0,
+      "text": "A kind farmer found a snake freezing in the snow."
+    },
+    {
+      "start": 4.0,
+      "end": 8.8,
+      "text": "Taking pity, he brought it home and warmed it by his fire."
+    },
+    {
+      "start": 8.8,
+      "end": 12.0,
+      "text": "As the snake revived, it bit the farmer."
+    },
+    {
+      "start": 12.0,
+      "end": 17.2,
+      "text": "Why did you bite me after I saved you asked the dying farmer."
+    },
+    {
+      "start": 17.2,
+      "end": 20.2,
+      "text": "It is my nature replied the snake."
+    },
+    {
+      "start": 20.2,
+      "end": 24.2,
+      "text": "You knew what I was when you picked me up."
+    },
+    {
+      "start": 24.2,
+      "end": 32.2,
+      "text": "A wise old woman who witnessed this said, Kindness is a virtue, but wisdom knows when and where to apply it."
+    },
+    {
+      "start": 32.2,
+      "end": 38.2,
+      "text": "Not all who suffer deserve our help if they will use it to harm others."
+    }
+  ]
+}

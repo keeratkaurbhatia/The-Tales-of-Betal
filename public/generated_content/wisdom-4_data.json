@@ -1,0 +1,43 @@
+{
+  "id": "wisdom-4",
+  "title": "The Wise Judge and the Two Mothers",
+  "theme": "wisdom",
+  "content": "Two women came before a wise judge, both claiming the same baby as their own. The judge listened to their arguments but could not determine the truth. Finally, he said, Since you both claim this child, I will cut the baby in half and give each of you a piece. One woman agreed, saying it was fair. The other woman cried out, No Give the baby to her I would rather lose my child than see him harmed The judge immediately gave the baby to the second woman, for only a true mother would sacrifice her own happiness for her child's safety.",
+  "images": [
+    "/generated_content/images/wisdom-4_scene_01.png",
+    "/generated_content/images/wisdom-4_scene_02.png",
+    "/generated_content/images/wisdom-4_scene_03.png",
+    "/generated_content/images/wisdom-4_scene_04.png",
+    "/generated_content/images/wisdom-4_scene_05.png",
+    "/generated_content/images/wisdom-4_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/wisdom-4_narration.mp3",
+  "videoUrl": "/generated_content/videos/wisdom-4_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 6.0,
+      "text": "Two women came before a wise judge, both claiming the same baby as their own."
+    },
+    {
+      "start": 6.0,
+      "end": 10.8,
+      "text": "The judge listened to their arguments but could not determine the truth."
+    },
+    {
+      "start": 10.8,
+      "end": 18.8,
+      "text": "Finally, he said, Since you both claim this child, I will cut the baby in half and give each of you a piece."
+    },
+    {
+      "start": 18.8,
+      "end": 21.8,
+      "text": "One woman agreed, saying it was fair."
+    },
+    {
+      "start": 21.8,
+      "end": 29.8,
+      "text": "The other woman cried out, No Give the baby to her I would rather lose my child than see him harmed The judge immediately gave the baby to the second woman, for only a true mother would sacrifice her own happiness for her child's safety."
+    }
+  ]
+}
