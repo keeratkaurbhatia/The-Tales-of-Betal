@@ -20,12 +20,35 @@ const Index = () => {
     }
   };
 
-  const handleThemeSelect = (theme: string) => {
-    const themeStories = stories.filter(story => story.theme === theme);
-    const randomStory = themeStories[Math.floor(Math.random() * themeStories.length)];
-    setSelectedStory(randomStory);
+const handleThemeSelect = async (theme: string) => {
+  try {
+    const res = await fetch('/generated_content/all_stories_data.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error(`Failed to fetch metadata (${res.status})`);
+    const all: any[] = await res.json();
+    const themeStories = all.filter(s => s.theme === theme || (s.tags && s.tags.includes(theme)));
+
+    if (!themeStories.length) {
+      toast.error(`No stories in that theme yet.`);
+      console.warn('No themeStories for', theme);
+      return;
+    }
+
+    const idx = Math.floor(Math.random() * themeStories.length);
+    const chosen = themeStories[idx];
+
+    // option A: pass full metadata so StoryPlayer uses it immediately
+    setSelectedStory(chosen);
+
+    // option B (lighter): pass only { id } and let StoryPlayer fetch canonical data itself:
+    // setSelectedStory({ id: chosen.id });
+
     setGameState('story');
-  };
+    
+  } catch (err) {
+    console.error('handleThemeSelect error', err);
+    toast.error('Could not load stories — try again.');
+  }
+};
 
   const handleStoryEnd = () => {
     setGameState('question');
