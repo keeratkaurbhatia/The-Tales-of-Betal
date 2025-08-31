@@ -207,8 +207,9 @@ const handleThemeSelect = async (theme: string) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 relative overflow-hidden">
-      {/* Mystical Background Elements */}
+    <div className="min-h-screen relative overflow-hidden bg-center bg-cover bg-fixed"
+    style={{backgroundImage: "url('/dark_forest.svg')"}}>
+
       <div className="absolute inset-0 bg-[url('/stars.png')] opacity-30"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
       
