@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import BetalMascot from './BetalMascot';
@@ -15,9 +16,10 @@ interface QuestionModalProps {
   betalMood: 'calm' | 'angry';
   onAnswer: (correct: boolean, usedDontKnow: boolean) => void;
   dontKnowLocked: boolean;
+  dontKnowCount: number;
 }
 
-const QuestionModal = ({ story, betalMood, onAnswer, dontKnowLocked }: QuestionModalProps) => {
+const QuestionModal = ({ story, betalMood, onAnswer, dontKnowLocked, dontKnowCount }: QuestionModalProps) => {
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showMoral, setShowMoral] = useState(false);
   const [wasCorrect, setWasCorrect] = useState(false);

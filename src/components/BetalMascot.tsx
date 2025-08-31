@@ -15,13 +15,15 @@ const BetalMascot = ({ state, mood }: BetalMascotProps) => {
           state === 'sleeping' && "animate-pulse"
         )}
       >
-        {/* Betal's Body - More Indian/Ancient Look */}
+        {/* Betal's Body - Canonical ghostly look with ash-white aura and skull mala */}
         <div className={cn(
           "w-40 h-48 mx-auto rounded-t-full relative transition-all duration-500 border-2",
-          mood === 'angry' ? "bg-gradient-to-b from-red-500 to-red-700 border-red-400" : "bg-gradient-to-b from-amber-600 to-amber-800 border-yellow-500"
+          mood === 'angry' 
+            ? "bg-gradient-to-b from-red-500 to-red-700 border-red-400" 
+            : "bg-gradient-to-b from-gray-200 to-gray-400 border-gray-300"
         )}>
           
-          {/* Traditional Tilaka (Forehead Mark) */}
+          {/* Tilaka (Forehead Mark) */}
           <div className="absolute top-4 left-1/2 transform -translate-x-1/2">
             <div className="w-1 h-6 bg-red-600 rounded-full"></div>
             <div className="w-3 h-1 bg-red-600 rounded-full mt-1"></div>
@@ -52,12 +54,12 @@ const BetalMascot = ({ state, mood }: BetalMascotProps) => {
             )}
           </div>
 
-          {/* Traditional Indian Nose */}
-          <div className="absolute top-18 left-1/2 transform -translate-x-1/2 w-3 h-4 bg-amber-900 rounded-full border border-yellow-600"></div>
+          {/* Nose */}
+          <div className="absolute top-18 left-1/2 transform -translate-x-1/2 w-3 h-4 bg-gray-600 rounded-full border border-gray-700"></div>
 
           {/* Mustache */}
           {state !== 'sleeping' && (
-            <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-8 h-2 bg-black rounded-full"></div>
+            <div className="absolute top-20 left-1/2 transform -translate-x-1/2 w-10 h-2 bg-black rounded-full"></div>
           )}
 
           {/* Mouth */}
@@ -68,14 +70,19 @@ const BetalMascot = ({ state, mood }: BetalMascotProps) => {
             )}></div>
           )}
 
-          {/* Traditional Jewelry/Ornaments */}
-          <div className="absolute top-8 left-3 w-2 h-2 bg-gold rounded-full border border-yellow-400"></div>
-          <div className="absolute top-8 right-3 w-2 h-2 bg-gold rounded-full border border-yellow-400"></div>
+          {/* Skull Mala (beads) */}
+          <div className="absolute top-28 left-1/2 transform -translate-x-1/2 w-24 h-10">
+            <div className="flex justify-between">
+              {Array.from({ length: 8 }).map((_, i) => (
+                <div key={i} className="w-2.5 h-2.5 bg-gray-200 rounded-full border border-gray-500"></div>
+              ))}
+            </div>
+          </div>
           
-          {/* Sacred Thread (Janeu) */}
-          <div className="absolute top-16 left-4 w-0.5 h-16 bg-white/80 rounded-full transform rotate-12"></div>
+          {/* Ghostly streaks */}
+          <div className="absolute top-16 left-4 w-0.5 h-16 bg-white/50 rounded-full transform rotate-12"></div>
           
-          {/* Ancient Markings/Tattoos */}
+          {/* Ancient markings */}
           <div className="absolute top-10 left-2 w-1 h-6 bg-red-600 rounded-full opacity-70"></div>
           <div className="absolute top-10 right-2 w-1 h-6 bg-red-600 rounded-full opacity-70"></div>
           <div className="absolute top-24 left-1/2 transform -translate-x-1/2 w-4 h-1 bg-red-600 rounded-full opacity-60"></div>
@@ -84,12 +91,12 @@ const BetalMascot = ({ state, mood }: BetalMascotProps) => {
           {state !== 'sleeping' && (
             <div className={cn(
               "absolute inset-0 rounded-t-full blur-sm animate-pulse",
-              mood === 'angry' ? "bg-red-400/30" : "bg-orange-400/30"
+              mood === 'angry' ? "bg-red-400/30" : "bg-indigo-200/30"
             )}></div>
           )}
 
-          {/* Traditional Crown/Headpiece */}
-          <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-16 h-4 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-t-lg border-2 border-yellow-400">
+          {/* Headpiece */}
+          <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-16 h-4 bg-gradient-to-r from-gray-300 to-gray-500 rounded-t-lg border-2 border-gray-400">
             <div className="absolute top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-red-600 rounded-full"></div>
           </div>
         </div>

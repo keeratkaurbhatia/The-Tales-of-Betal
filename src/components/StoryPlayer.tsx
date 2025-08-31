@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Play, Pause, Volume2 } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 interface StoryPlayerProps {
   story: {

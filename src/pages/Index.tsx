@@ -7,11 +7,19 @@ import ThemeSelector from '@/components/ThemeSelector';
 import QuestionModal from '@/components/QuestionModal';
 import { stories } from '@/data/stories';
 import { toast } from 'sonner';
+import GameStats from '@/components/GameStats';
 
 const Index = () => {
   const [gameState, setGameState] = useState<'sleeping' | 'awake' | 'story' | 'question'>('sleeping');
   const [selectedStory, setSelectedStory] = useState<any>(null);
   const [betalMood, setBetalMood] = useState<'calm' | 'angry'>('calm');
+
+  // Game meta: coins, curses, and don't know limit
+  const [coins, setCoins] = useState<number>(0);
+  const [isCursed, setIsCursed] = useState<boolean>(false);
+  const [curseEndsAt, setCurseEndsAt] = useState<number | null>(null);
+  const [dontKnowCount, setDontKnowCount] = useState<number>(0);
+  const maxDontKnow = 3;
   
   const handleWakeBetal = () => {
     if (gameState === 'sleeping') {
@@ -21,6 +29,11 @@ const Index = () => {
   };
 
   const handleThemeSelect = (theme: string) => {
+    if (isCursed && curseEndsAt && Date.now() < curseEndsAt) {
+      const remaining = Math.ceil((curseEndsAt - Date.now()) / 1000);
+      toast.error(`You are cursed. Wait ${remaining}s before choosing another tale.`);
+      return;
+    }
     const themeStories = stories.filter(story => story.theme === theme);
     const randomStory = themeStories[Math.floor(Math.random() * themeStories.length)];
     setSelectedStory(randomStory);
@@ -31,14 +44,40 @@ const Index = () => {
     setGameState('question');
   };
 
-  const handleAnswerQuestion = (answered: boolean) => {
-    setBetalMood(answered ? 'angry' : 'calm');
+  const handleAnswerQuestion = (correct: boolean, usedDontKnow: boolean) => {
+    if (usedDontKnow) {
+      setDontKnowCount((c) => Math.min(maxDontKnow, c + 1));
+      setBetalMood('calm');
+    } else if (correct) {
+      setCoins((c) => c + 1);
+      setBetalMood('calm');
+    } else {
+      // Apply 30s curse on incorrect answer
+      const durationMs = 30_000;
+      const endsAt = Date.now() + durationMs;
+      setIsCursed(true);
+      setCurseEndsAt(endsAt);
+      setBetalMood('angry');
+    }
+
     setTimeout(() => {
       setGameState('sleeping');
       setBetalMood('calm');
       setSelectedStory(null);
     }, 3000);
   };
+
+  // Clear curse state once it expires
+  useEffect(() => {
+    if (!isCursed || !curseEndsAt) return;
+    const interval = setInterval(() => {
+      if (Date.now() >= curseEndsAt) {
+        setIsCursed(false);
+        setCurseEndsAt(null);
+      }
+    }, 500);
+    return () => clearInterval(interval);
+  }, [isCursed, curseEndsAt]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 relative overflow-hidden">
@@ -49,6 +88,15 @@ const Index = () => {
       {/* Main Content */}
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center p-4">
         
+        <GameStats 
+          coins={coins}
+          isCursed={isCursed}
+          curseTimeRemaining={Math.max(0, (curseEndsAt ?? Date.now()) - Date.now())}
+          dontKnowCount={dontKnowCount}
+          maxDontKnow={maxDontKnow}
+          dontKnowLocked={dontKnowCount >= maxDontKnow}
+        />
+
         {gameState === 'sleeping' && (
           <div className="text-center space-y-8">
             <div className="space-y-4">
@@ -102,6 +150,8 @@ const Index = () => {
             story={selectedStory}
             betalMood={betalMood}
             onAnswer={handleAnswerQuestion}
+            dontKnowLocked={dontKnowCount >= maxDontKnow}
+            dontKnowCount={dontKnowCount}
           />
         )}
       </div>

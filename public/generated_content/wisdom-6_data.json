@@ -1,0 +1,53 @@
+{
+  "id": "wisdom-6",
+  "title": "The Sage and the Mirror",
+  "theme": "wisdom",
+  "content": "A traveler asked a sage, How do I find wisdom The sage handed him a mirror and said, Look until you stop seeing only yourself. Days later, the traveler returned, humbled. I saw my pride, my fears, my excuses. Then I began to see others. The sage smiled. Now you are ready. Wisdom begins when the self no longer fills the view.",
+  "images": [
+    "/generated_content/images/wisdom-6_scene_01.png",
+    "/generated_content/images/wisdom-6_scene_02.png",
+    "/generated_content/images/wisdom-6_scene_03.png",
+    "/generated_content/images/wisdom-6_scene_04.png",
+    "/generated_content/images/wisdom-6_scene_05.png",
+    "/generated_content/images/wisdom-6_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/wisdom-6_narration.mp3",
+  "videoUrl": "/generated_content/videos/wisdom-6_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 8.0,
+      "text": "A traveler asked a sage, How do I find wisdom The sage handed him a mirror and said, Look until you stop seeing only yourself."
+    },
+    {
+      "start": 8.0,
+      "end": 11.0,
+      "text": "Days later, the traveler returned, humbled."
+    },
+    {
+      "start": 11.0,
+      "end": 14.2,
+      "text": "I saw my pride, my fears, my excuses."
+    },
+    {
+      "start": 14.2,
+      "end": 17.2,
+      "text": "Then I began to see others."
+    },
+    {
+      "start": 17.2,
+      "end": 20.2,
+      "text": "The sage smiled."
+    },
+    {
+      "start": 20.2,
+      "end": 23.2,
+      "text": "Now you are ready."
+    },
+    {
+      "start": 23.2,
+      "end": 27.2,
+      "text": "Wisdom begins when the self no longer fills the view."
+    }
+  ]
+}

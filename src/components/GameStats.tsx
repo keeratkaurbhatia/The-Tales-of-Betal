@@ -1,5 +1,6 @@
 import { Card } from '@/components/ui/card';
 import { Coins, Clock, HelpCircle } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 interface GameStatsProps {
   coins: number;

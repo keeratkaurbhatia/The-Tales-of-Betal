@@ -6,13 +6,15 @@ This script creates individual JSON files for each story in the public directory
 
 import json
 import os
+import re
 from typing import List, Dict, Any
 
 def create_story_data(story_id: str, title: str, theme: str, content: str) -> Dict[str, Any]:
     """Create story data structure with proper paths and timing."""
     
-    # Split content into sentences for subtitle timing
-    sentences = [s.strip() + '.' for s in content.replace('\n', ' ').split('.') if s.strip()]
+    # Split content into sentences for subtitle timing using punctuation-aware regex
+    normalized = re.sub(r"\s+", " ", content.strip())
+    sentences = re.findall(r"[^.!?]+[.!?]", normalized)
     
     # Generate subtitles with proper timing (approximately 5-6 seconds per sentence)
     subtitles = []
@@ -112,7 +114,20 @@ def main():
          "Three brothers inherited their father's land but couldn't agree on how to divide it fairly. The eldest wanted the fertile fields, the middle brother wanted the forest, and the youngest wanted the riverside. They argued for months until a wise woman suggested a solution Each of you will divide the land into three parts as you see fit. Then, the other two will choose their portions first. Suddenly, each brother began to divide more fairly, knowing they might not get their first choice. All three ended up satisfied with the fair division."),
         
         ("justice-5", "The Truthful Witness", "justice",
-         "In a court case, a poor man was accused of stealing from a rich merchant. Many witnesses came forward, but their stories contradicted each other. Finally, a simple washerman stepped forward. I saw everything he said quietly. The merchant dropped his purse, and this man picked it up and ran after him to return it. But the merchant was in his carriage and didn't hear him calling. The rich merchant, embarrassed by his false accusation, not only apologized but rewarded the honest man for his integrity.")
+         "In a court case, a poor man was accused of stealing from a rich merchant. Many witnesses came forward, but their stories contradicted each other. Finally, a simple washerman stepped forward. I saw everything he said quietly. The merchant dropped his purse, and this man picked it up and ran after him to return it. But the merchant was in his carriage and didn't hear him calling. The rich merchant, embarrassed by his false accusation, not only apologized but rewarded the honest man for his integrity."),
+
+        # Additional one per theme (story 6)
+        ("wisdom-6", "The Sage and the Mirror", "wisdom",
+         "A traveler asked a sage, How do I find wisdom The sage handed him a mirror and said, Look until you stop seeing only yourself. Days later, the traveler returned, humbled. I saw my pride, my fears, my excuses. Then I began to see others. The sage smiled. Now you are ready. Wisdom begins when the self no longer fills the view."),
+
+        ("courage-6", "The Bridge of Night", "courage",
+         "An old rope bridge swayed over a gorge. At dusk, a healer carried medicine across for a sick child. Halfway through, a plank snapped. She froze, then remembered the child waiting. Breathing steadily, she crawled forward, testing each step. She reached the far side as stars rose, clutching the medicine and the courage she found between fear and love."),
+
+        ("kindness-6", "The Lantern Left Burning", "kindness",
+         "A widow placed a lantern at her gate each night, saying, May any traveler find their way. One stormy evening, she had only a little oil left, yet she lit it anyway. At dawn, she found a note Your light saved my life. Years later, a sturdy roof and storehouse were built for her by that same traveler, grateful beyond words."),
+
+        ("justice-6", "The Scales in the Dark", "justice",
+         "A judge asked two merchants to weigh their goods in a dark room. One cheated in the shadows the other measured fairly. When torches were lit, the judge said, Justice is not for the crowd to see it is for your own soul to carry. The honest merchant was favored, for justice begins where no one watches.")
     ]
     
     # Create output directory

@@ -1,0 +1,48 @@
+{
+  "id": "courage-6",
+  "title": "The Bridge of Night",
+  "theme": "courage",
+  "content": "An old rope bridge swayed over a gorge. At dusk, a healer carried medicine across for a sick child. Halfway through, a plank snapped. She froze, then remembered the child waiting. Breathing steadily, she crawled forward, testing each step. She reached the far side as stars rose, clutching the medicine and the courage she found between fear and love.",
+  "images": [
+    "/generated_content/images/courage-6_scene_01.png",
+    "/generated_content/images/courage-6_scene_02.png",
+    "/generated_content/images/courage-6_scene_03.png",
+    "/generated_content/images/courage-6_scene_04.png",
+    "/generated_content/images/courage-6_scene_05.png",
+    "/generated_content/images/courage-6_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/courage-6_narration.mp3",
+  "videoUrl": "/generated_content/videos/courage-6_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 3.2,
+      "text": "An old rope bridge swayed over a gorge."
+    },
+    {
+      "start": 3.2,
+      "end": 7.6,
+      "text": "At dusk, a healer carried medicine across for a sick child."
+    },
+    {
+      "start": 7.6,
+      "end": 10.6,
+      "text": "Halfway through, a plank snapped."
+    },
+    {
+      "start": 10.6,
+      "end": 13.6,
+      "text": "She froze, then remembered the child waiting."
+    },
+    {
+      "start": 13.6,
+      "end": 16.8,
+      "text": "Breathing steadily, she crawled forward, testing each step."
+    },
+    {
+      "start": 16.8,
+      "end": 24.8,
+      "text": "She reached the far side as stars rose, clutching the medicine and the courage she found between fear and love."
+    }
+  ]
+}

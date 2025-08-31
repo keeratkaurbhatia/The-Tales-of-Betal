@@ -1,0 +1,38 @@
+{
+  "id": "kindness-6",
+  "title": "The Lantern Left Burning",
+  "theme": "kindness",
+  "content": "A widow placed a lantern at her gate each night, saying, May any traveler find their way. One stormy evening, she had only a little oil left, yet she lit it anyway. At dawn, she found a note Your light saved my life. Years later, a sturdy roof and storehouse were built for her by that same traveler, grateful beyond words.",
+  "images": [
+    "/generated_content/images/kindness-6_scene_01.png",
+    "/generated_content/images/kindness-6_scene_02.png",
+    "/generated_content/images/kindness-6_scene_03.png",
+    "/generated_content/images/kindness-6_scene_04.png",
+    "/generated_content/images/kindness-6_scene_05.png",
+    "/generated_content/images/kindness-6_scene_06.png"
+  ],
+  "audioUrl": "/generated_content/audio/kindness-6_narration.mp3",
+  "videoUrl": "/generated_content/videos/kindness-6_video.mp4",
+  "subtitles": [
+    {
+      "start": 0.0,
+      "end": 6.8,
+      "text": "A widow placed a lantern at her gate each night, saying, May any traveler find their way."
+    },
+    {
+      "start": 6.8,
+      "end": 12.8,
+      "text": "One stormy evening, she had only a little oil left, yet she lit it anyway."
+    },
+    {
+      "start": 12.8,
+      "end": 17.2,
+      "text": "At dawn, she found a note Your light saved my life."
+    },
+    {
+      "start": 17.2,
+      "end": 24.4,
+      "text": "Years later, a sturdy roof and storehouse were built for her by that same traveler, grateful beyond words."
+    }
+  ]
+}

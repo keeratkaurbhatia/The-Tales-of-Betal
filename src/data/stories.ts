@@ -47,6 +47,35 @@ export const stories: Story[] = [
     moral: 'True wisdom lies not in accumulating wealth, but in understanding that compassion and kindness are the greatest treasures we can cultivate.'
   },
   {
+    id: 'wisdom-6',
+    title: 'The Sage and the Mirror',
+    theme: 'wisdom',
+    content: `A traveler asked a sage, "How do I find wisdom?" The sage handed him a mirror and said, "Look until you stop seeing only yourself." Days later, the traveler returned, humbled. "I saw my pride, my fears, my excuses. Then I began to see others." The sage smiled. "Now you are ready. Wisdom begins when the self no longer fills the view."`,
+    images: [
+      '/generated_content/images/wisdom-6_scene_01.png',
+      '/generated_content/images/wisdom-6_scene_02.png',
+      '/generated_content/images/wisdom-6_scene_03.png',
+    ],
+    audioUrl: '/generated_content/audio/wisdom-6_narration.mp3',
+    videoUrl: '/generated_content/videos/wisdom-6_video.mp4',
+    subtitles: [
+      { start: 0, end: 5, text: 'A traveler asked a sage how to find wisdom.' },
+      { start: 5, end: 10, text: 'The sage gave him a mirror to study himself.' },
+      { start: 10, end: 15, text: 'He saw pride, fear, and excuses in his reflection.' },
+      { start: 15, end: 20, text: 'When his view widened, he began to see others.' },
+      { start: 20, end: 25, text: 'Thus begins the path to true wisdom.' },
+    ],
+    question: 'What was the sage teaching with the mirror?',
+    options: [
+      'To admire oneself',
+      'To see beyond the self and understand others',
+      'That mirrors are magical',
+      'To avoid pride by never looking in mirrors'
+    ],
+    correctAnswer: 1,
+    moral: 'Wisdom starts with honest self-reflection and grows when we learn to see beyond ourselves to the needs and truths of others.'
+  },
+  {
     id: 'wisdom-2',
     title: 'The Scholar and the Boatman',
     theme: 'wisdom',
@@ -75,6 +104,35 @@ export const stories: Story[] = [
     ],
     correctAnswer: 1,
     moral: 'Knowledge without practical wisdom is incomplete. True intelligence combines learning with the ability to apply it in real situations.'
+  },
+  {
+    id: 'courage-6',
+    title: 'The Bridge of Night',
+    theme: 'courage',
+    content: `An old rope bridge swayed over a gorge. At dusk, a healer carried medicine across for a sick child. Halfway through, a plank snapped. She froze, then remembered the child waiting. Breathing steadily, she crawled forward, testing each step. She reached the far side as stars rose, clutching the medicine—and the courage she found between fear and love."`,
+    images: [
+      '/generated_content/images/courage-6_scene_01.png',
+      '/generated_content/images/courage-6_scene_02.png',
+      '/generated_content/images/courage-6_scene_03.png',
+    ],
+    audioUrl: '/generated_content/audio/courage-6_narration.mp3',
+    videoUrl: '/generated_content/videos/courage-6_video.mp4',
+    subtitles: [
+      { start: 0, end: 5, text: 'A healer crossed an old rope bridge at dusk.' },
+      { start: 5, end: 10, text: 'A plank snapped and fear took hold.' },
+      { start: 10, end: 15, text: 'She remembered the child who needed her.' },
+      { start: 15, end: 20, text: 'Breathing steady, she tested each step forward.' },
+      { start: 20, end: 25, text: 'She reached the far side beneath the stars.' },
+    ],
+    question: 'What helped the healer overcome fear?',
+    options: [
+      'Closing her eyes and running',
+      'Her love and responsibility for the child',
+      'Luck and chance',
+      'Shouting for help'
+    ],
+    correctAnswer: 1,
+    moral: 'Courage is choosing to act for others despite fear. Love steadies the trembling heart.'
   },
   {
     id: 'wisdom-3',
@@ -107,6 +165,35 @@ export const stories: Story[] = [
     moral: 'True strength is shown not in dominating others, but in protecting and caring for those who are more vulnerable than ourselves.'
   },
   {
+    id: 'kindness-6',
+    title: 'The Lantern Left Burning',
+    theme: 'kindness',
+    content: `A widow placed a lantern at her gate each night, saying, "May any traveler find their way." One stormy evening, she had only a little oil left, yet she lit it anyway. At dawn, she found a note: "Your light saved my life." Years later, a sturdy roof and storehouse were built for her by that same traveler, grateful beyond words."`,
+    images: [
+      '/generated_content/images/kindness-6_scene_01.png',
+      '/generated_content/images/kindness-6_scene_02.png',
+      '/generated_content/images/kindness-6_scene_03.png',
+    ],
+    audioUrl: '/generated_content/audio/kindness-6_narration.mp3',
+    videoUrl: '/generated_content/videos/kindness-6_video.mp4',
+    subtitles: [
+      { start: 0, end: 5, text: 'A widow lit a lantern at her gate each night.' },
+      { start: 5, end: 10, text: 'She kept it burning even during a storm.' },
+      { start: 10, end: 15, text: 'A traveler left a note: your light saved my life.' },
+      { start: 15, end: 20, text: 'Years later, kindness returned as shelter and store.' },
+      { start: 20, end: 25, text: 'Kindness lights the way for us all.' },
+    ],
+    question: 'What is the message of the lantern?',
+    options: [
+      'Light is expensive; save oil',
+      'Small acts of kindness can save lives and return multiplied',
+      'Travelers should carry their own lanterns',
+      'Never help strangers'
+    ],
+    correctAnswer: 1,
+    moral: 'Even small kindness given consistently can become someone’s lifeline—and kindness often returns when most needed.'
+  },
+  {
     id: 'wisdom-4',
     title: 'The Wise Judge and the Two Mothers',
     theme: 'wisdom',
@@ -135,6 +222,35 @@ export const stories: Story[] = [
     ],
     correctAnswer: 1,
     moral: 'True love is selfless and always puts the beloved\'s welfare above one\'s own desires. Wisdom can reveal truth through understanding the heart.'
+  },
+  {
+    id: 'justice-6',
+    title: 'The Scales in the Dark',
+    theme: 'justice',
+    content: `A judge asked two merchants to weigh their goods in a dark room. One cheated in the shadows; the other measured fairly. When torches were lit, the judge said, "Justice is not for the crowd to see—it is for your own soul to carry." The honest merchant was favored, for justice begins where no one watches."`,
+    images: [
+      '/generated_content/images/justice-6_scene_01.png',
+      '/generated_content/images/justice-6_scene_02.png',
+      '/generated_content/images/justice-6_scene_03.png',
+    ],
+    audioUrl: '/generated_content/audio/justice-6_narration.mp3',
+    videoUrl: '/generated_content/videos/justice-6_video.mp4',
+    subtitles: [
+      { start: 0, end: 5, text: 'Two merchants weighed goods in a dark room.' },
+      { start: 5, end: 10, text: 'One cheated when he thought no one could see.' },
+      { start: 10, end: 15, text: 'The other measured fairly even in darkness.' },
+      { start: 15, end: 20, text: 'Justice is a light you carry within.' },
+      { start: 20, end: 25, text: 'Honesty was rewarded when torches were lit.' },
+    ],
+    question: 'Why did the judge trust the honest merchant?',
+    options: [
+      'He was richer',
+      'He acted justly even when unseen',
+      'He complimented the judge',
+      'He threatened the other merchant'
+    ],
+    correctAnswer: 1,
+    moral: 'Justice is not performance; it is integrity. True fairness shines most when no eyes are upon us.'
   },
   {
     id: 'wisdom-5',
