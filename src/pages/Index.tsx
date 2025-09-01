@@ -17,6 +17,234 @@ const Index = () => {
   const [cooldownRemaining, setCooldownRemaining] = useState<number>(0);
   const [currentTheme, setCurrentTheme] = useState<string | null>(null);
 
+  // Per-story quiz data
+const quizById: Record<string, { question: string; options: string[]; correctAnswer: number; moral: string }> = {
+  'wisdom-1': {
+    question: 'Which insight best explains how the monkey survived?',
+    options: [
+      'Luck favored him',
+      'He outwitted brute force with presence of mind',
+      'He was physically stronger',
+      'He trusted the crocodile fully'
+    ],
+    correctAnswer: 1,
+    moral: 'Wit reframes danger; presence of mind defeats brute force.'
+  },
+  'courage-1': {
+    question: 'What transformed risk into rescue for the potter’s son?',
+    options: [
+      'The absence of fear',
+      'Steady action despite fear',
+      'Orders from elders',
+      'Superior strength alone'
+    ],
+    correctAnswer: 1,
+    moral: 'Courage is disciplined action, not the absence of fear.'
+  },
+  'kindness-1': {
+    question: 'What does the crow’s return suggest about giving?',
+    options: [
+      'Kindness drains the giver',
+      'Kindness often returns transformed',
+      'Only grand gifts matter',
+      'Gifts must be repaid at once'
+    ],
+    correctAnswer: 1,
+    moral: 'Small kindnesses compound in unexpected ways.'
+  },
+  'justice-1': {
+    question: 'How did truth surface in the washerman’s case?',
+    options: [
+      'By harsh punishment first',
+      'By leaving it to fate',
+      'By a clear test that made lies heavy',
+      'By the loudest voice winning'
+    ],
+    correctAnswer: 2,
+    moral: 'Fair tests illuminate truth; justice needs clarity, not noise.'
+  },
+  'wisdom-2': {
+    question: 'When does wisdom most often speak?',
+    options: [
+      'Through constant talk',
+      'In timely restraint',
+      'By pleasing everyone',
+      'By clever jokes alone'
+    ],
+    correctAnswer: 1,
+    moral: 'Knowing when not to speak is itself wisdom.'
+  },
+  'courage-2': {
+    question: 'What defines courage in the tiger cub’s act?',
+    options: [
+      'Being the biggest',
+      'Freeing others despite danger',
+      'Shouting the loudest',
+      'Waiting for help'
+    ],
+    correctAnswer: 1,
+    moral: 'Courage serves others at a cost to oneself.'
+  },
+  'kindness-2': {
+    question: 'What did the traveler give back to the banyan tree’s kindness?',
+    options: [
+      'Gold and silver',
+      'Stories and presence that nourished the giver',
+      'Silence and departure',
+      'A carved token'
+    ],
+    correctAnswer: 1,
+    moral: 'Shared presence can be a gift as real as fruit and shade.'
+  },
+  'justice-2': {
+    question: 'Why was the woodcutter rewarded?',
+    options: [
+      'He wanted the golden axe',
+      'He chose truth over gain',
+      'He guessed correctly',
+      'He was simply lucky'
+    ],
+    correctAnswer: 1,
+    moral: 'Justice honors the choice of truth over profit.'
+  },
+  'wisdom-3': {
+    question: 'Birbal’s circle points to which understanding?',
+    options: [
+      'Power obeys power',
+      'Truth returns to itself',
+      'Silence is weakness',
+      'Lengthy speech persuades most'
+    ],
+    correctAnswer: 1,
+    moral: 'Symbols and silence can say what speeches cannot.'
+  },
+  'courage-3': {
+    question: 'What turned fear into retreat for the dacoits?',
+    options: [
+      'Secret weapons',
+      'Light and signal that summoned imagined strength',
+      'Bargaining with thieves',
+      'Quiet waiting'
+    ],
+    correctAnswer: 1,
+    moral: 'Perception can be redirected by one brave signal.'
+  },
+  'kindness-3': {
+    question: 'Why is half a roti “enough” here?',
+    options: [
+      'Because hunger was small',
+      'Because intention multiplies small gifts',
+      'Because kings need little',
+      'Because wealth follows rank'
+    ],
+    correctAnswer: 1,
+    moral: 'A small gift, given fully, becomes abundance.'
+  },
+  'justice-3': {
+    question: 'What truly exposed the thief?',
+    options: [
+      'Magic from the judge',
+      'A conscience fearing a simple test',
+      'Pure accident',
+      'Forceful interrogation'
+    ],
+    correctAnswer: 1,
+    moral: 'Justice can invite truth by letting guilt reveal itself.'
+  },
+  'wisdom-4': {
+    question: 'How did Tenali Raman’s wisdom work?',
+    options: [
+      'By force and threats',
+      'By mirroring greed to reveal it',
+      'By ignoring the problem',
+      'By rewarding greed'
+    ],
+    correctAnswer: 1,
+    moral: 'Clever mirrors make folly unmistakable.'
+  },
+  'courage-4': {
+    question: 'What makes Abhimanyu’s act profound?',
+    options: [
+      'Certain victory was guaranteed',
+      'Stepping into the unknown for a larger duty',
+      'Superior weapons decided it',
+      'A promised rescue'
+    ],
+    correctAnswer: 1,
+    moral: 'Courage is duty embraced without guarantees.'
+  },
+  'kindness-4': {
+    question: 'What does Shibi teach about protection?',
+    options: [
+      'Protect only the strong',
+      'Offer words, not sacrifice',
+      'Shield the vulnerable even at personal cost',
+      'Avoid taking sides'
+    ],
+    correctAnswer: 2,
+    moral: 'Compassion becomes real when it costs us something.'
+  },
+  'justice-4': {
+    question: 'What revives justice in this tale?',
+    options: [
+      'Elegant rhetoric',
+      'Unbending truthfulness under trial',
+      'Random chance',
+      'Favoritism from power'
+    ],
+    correctAnswer: 1,
+    moral: 'Justice breathes through steadfast truth.'
+  },
+  'wisdom-5': {
+    question: 'What is Chanakya’s warning in a single hair?',
+    options: [
+      'Details are trivial',
+      'A small lapse can seed collapse',
+      'Outcomes are random',
+      'Blame preserves order'
+    ],
+    correctAnswer: 1,
+    moral: 'Guard the small; empires fall through hairline cracks.'
+  },
+  'courage-5': {
+    question: 'Where does Nachiketa’s courage live?',
+    options: [
+      'In battle rage',
+      'In inquiry before death itself',
+      'In denial of fear',
+      'In flattery of power'
+    ],
+    correctAnswer: 1,
+    moral: 'To seek truth at the edge of mortality is courage.'
+  },
+  'kindness-5': {
+    question: 'What did Rantideva desire most?',
+    options: [
+      'Personal comfort',
+      'The well‑being of all beings',
+      'Reputation and praise',
+      'Exact repayment'
+    ],
+    correctAnswer: 1,
+    moral: 'A heart for all turns poverty into plenty.'
+  },
+  'justice-5': {
+    question: 'What sustains Harishchandra’s justice?',
+    options: [
+      'Convenience',
+      'Uncompromising truth even in loss',
+      'Popularity',
+      'Force and fear'
+    ],
+    correctAnswer: 1,
+    moral: 'Justice held at personal cost restores what is lost.'
+  }
+};
+
+const buildQuestionForStory = (id: string, theme: string) => {
+  return quizById[id] ?? buildQuestionForTheme(theme);
+};
+  
   const buildQuestionForTheme = (theme: string) => {
     if (theme === 'wisdom') {
       return {
@@ -156,7 +384,7 @@ const handleThemeSelect = async (theme: string) => {
     setCurrentTheme(theme);
 
     // attach themed Q/A if not present in generated data
-    const qa = buildQuestionForTheme(theme);
+    const qa = buildQuestionForStory(chosen.id, theme);
     setSelectedStory({ ...chosen, ...qa });
 
     // option B (lighter): pass only { id } and let StoryPlayer fetch canonical data itself:

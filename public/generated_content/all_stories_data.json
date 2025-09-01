@@ -159,7 +159,7 @@
       "public/generated_content/images/wisdom-2_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/wisdom-2_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\wisdom-2_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\wisdom-2_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -196,7 +196,7 @@
       "public/generated_content/images/courage-2_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/courage-2_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\courage-2_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\courage-2_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -228,7 +228,7 @@
       "public/generated_content/images/kindness-2_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/kindness-2_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\kindness-2_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\kindness-2_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -260,7 +260,7 @@
       "public/generated_content/images/justice-2_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/justice-2_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\justice-2_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\justice-2_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -297,7 +297,7 @@
       "public/generated_content/images/wisdom-3_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/wisdom-3_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\wisdom-3_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\wisdom-3_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -329,7 +329,7 @@
       "public/generated_content/images/courage-3_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/courage-3_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\courage-3_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\courage-3_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -366,7 +366,7 @@
       "public/generated_content/images/kindness-3_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/kindness-3_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\kindness-3_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\kindness-3_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -398,7 +398,7 @@
       "public/generated_content/images/justice-3_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/justice-3_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\justice-3_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\justice-3_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -435,7 +435,7 @@
       "public/generated_content/images/wisdom-4_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/wisdom-4_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\wisdom-4_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\wisdom-4_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -472,7 +472,7 @@
       "public/generated_content/images/courage-4_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/courage-4_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\courage-4_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\courage-4_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -504,7 +504,7 @@
       "public/generated_content/images/kindness-4_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/kindness-4_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\kindness-4_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\kindness-4_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -536,7 +536,7 @@
       "public/generated_content/images/justice-4_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/justice-4_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\justice-4_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\justice-4_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -568,7 +568,7 @@
       "public/generated_content/images/wisdom-5_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/wisdom-5_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\wisdom-5_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\wisdom-5_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -600,7 +600,7 @@
       "public/generated_content/images/courage-5_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/courage-5_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\courage-5_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\courage-5_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -632,7 +632,7 @@
       "public/generated_content/images/kindness-5_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/kindness-5_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\kindness-5_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\kindness-5_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -664,7 +664,7 @@
       "public/generated_content/images/justice-5_scene_05.png"
     ],
     "audioUrl": "public/generated_content/audio/justice-5_narration.mp3",
-    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\justice-5_video.mp4",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\justice-5_video.mp4",
     "subtitles": [
       {
         "start": 0,
