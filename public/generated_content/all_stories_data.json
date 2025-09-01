@@ -2,7 +2,7 @@
   {
     "id": "wisdom-1",
     "title": "The Monkey and the Crocodile",
-    "theme":"wisdom",
+    "theme": "wisdom",
     "content": "A clever monkey lived on a jamun tree by a river. One day, a crocodile tried to trick the monkey into coming onto his back to eat him. Using his wit, the monkey told the crocodile he had left his heart on the tree and must return to fetch it. The crocodile, fooled, brought him back to safety. The monkey's intelligence saved his life, proving that sharp thinking can triumph over brute strength.",
     "images": [
       "public/generated_content/images/wisdom-1_scene_01.png",
@@ -53,8 +53,8 @@
       "public/generated_content/images/courage-1_scene_04.png",
       "public/generated_content/images/courage-1_scene_05.png"
     ],
-    "audioUrl": "/generated_content/audio/courage-1_narration.mp3",
-    "videoUrl": "/generated_content/videos/generated_content\\videos\\courage-1_video.mp4",
+    "audioUrl": "public/generated_content/audio/courage-1_narration.mp3",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\courage-1_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -76,17 +76,17 @@
   {
     "id": "kindness-1",
     "title": "The Foolish Sage and the Hungry Crow",
-    "theme":"kindness",
+    "theme": "kindness",
     "content": "A wise but absent-minded sage often forgot to eat. One day, he found a hungry crow pecking at grains near his hut. Instead of scolding it, he shared his meager food. The crow, grateful, later returned with a treasure hidden in the forest, showing that even small acts of kindness can bring unexpected blessings.",
     "images": [
-      "/generated_content/images/kindness-1_scene_01.png",
-      "/generated_content/images/kindness-1_scene_02.png",
-      "/generated_content/images/kindness-1_scene_03.png",
-      "/generated_content/images/kindness-1_scene_04.png",
-      "/generated_content/images/kindness-1_scene_05.png"
+      "public/generated_content/images/kindness-1_scene_01.png",
+      "public/generated_content/images/kindness-1_scene_02.png",
+      "public/generated_content/images/kindness-1_scene_03.png",
+      "public/generated_content/images/kindness-1_scene_04.png",
+      "public/generated_content/images/kindness-1_scene_05.png"
     ],
-    "audioUrl": "/generated_content/audio/kindness-1_narration.mp3",
-    "videoUrl": "/generated_content/videos/generated_content\\videos\\kindness-1_video.mp4",
+    "audioUrl": "public/generated_content/audio/kindness-1_narration.mp3",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\kindness-1_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -113,16 +113,16 @@
   {
     "id": "justice-1",
     "title": "The Clever Washerman",
-    "theme":"justice",
+    "theme": "justice",
     "content": "A dishonest rich man claimed that a poor washerman had stolen his gold coins. The village elders were about to punish the washerman, but he suggested testing the claim: they should weigh the washerman and the coins together, then separately. By clever reasoning, he revealed the man had hidden the coins in his own pockets. The washerman\u2019s calm intelligence exposed injustice and taught the value of fairness and wit.",
     "images": [
-      "/generated_content/images/justice-1_scene_01.png",
-      "/generated_content/images/justice-1_scene_02.png",
-      "/generated_content/images/justice-1_scene_03.png",
-      "/generated_content/images/justice-1_scene_04.png"
+      "public/generated_content/images/justice-1_scene_01.png",
+      "public/generated_content/images/justice-1_scene_02.png",
+      "public/generated_content/images/justice-1_scene_03.png",
+      "public/generated_content/images/justice-1_scene_04.png"
     ],
-    "audioUrl": "/generated_content/audio/justice-1_narration.mp3",
-    "videoUrl": "/generated_content/videos/generated_content\\videos\\justice-1_video.mp4",
+    "audioUrl": "public/generated_content/audio/justice-1_narration.mp3",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\justice-1_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -143,6 +143,543 @@
         "start": 26.4,
         "end": 35.1,
         "text": "The washerman\u2019s calm intelligence exposed injustice and taught the value of fairness and wit.."
+      }
+    ]
+  },
+  {
+    "id": "wisdom-2",
+    "title": "The Talkative Tortoise",
+    "theme": "wisdom",
+    "content": "A tortoise, slow but wise, loved to talk too much. One day, he invited birds to take him across a river. As they flew, he kept chatting and fell into the water. This story teaches that wisdom is not just knowledge, but knowing when to speak and when to stay silent.",
+    "images": [
+      "public/generated_content/images/wisdom-2_scene_01.png",
+      "public/generated_content/images/wisdom-2_scene_02.png",
+      "public/generated_content/images/wisdom-2_scene_03.png",
+      "public/generated_content/images/wisdom-2_scene_04.png",
+      "public/generated_content/images/wisdom-2_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/wisdom-2_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\wisdom-2_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 6.1,
+        "text": "A tortoise, slow but wise, loved to talk too much."
+      },
+      {
+        "start": 6.1,
+        "end": 12.2,
+        "text": "One day, he invited birds to take him across a river."
+      },
+      {
+        "start": 12.2,
+        "end": 18.3,
+        "text": "As they flew, he kept chatting and fell into the water."
+      },
+      {
+        "start": 18.3,
+        "end": 24.4,
+        "text": "This story teaches that wisdom is not just knowledge, but knowing when to speak and when to stay silent.."
+      }
+    ]
+  },
+  {
+    "id": "courage-2",
+    "title": "The Fearless Tiger Cub",
+    "theme": "courage",
+    "content": "A young tiger cub saw a hunter trapping animals in the forest. Despite his size, he boldly confronted the hunter, scaring him away and freeing the trapped animals. The story highlights that courage comes in all sizes and sometimes the smallest actions make the biggest difference.",
+    "images": [
+      "public/generated_content/images/courage-2_scene_01.png",
+      "public/generated_content/images/courage-2_scene_02.png",
+      "public/generated_content/images/courage-2_scene_03.png",
+      "public/generated_content/images/courage-2_scene_04.png",
+      "public/generated_content/images/courage-2_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/courage-2_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\courage-2_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 8.1,
+        "text": "A young tiger cub saw a hunter trapping animals in the forest."
+      },
+      {
+        "start": 8.1,
+        "end": 16.3,
+        "text": "Despite his size, he boldly confronted the hunter, scaring him away and freeing the trapped animals."
+      },
+      {
+        "start": 16.3,
+        "end": 24.4,
+        "text": "The story highlights that courage comes in all sizes and sometimes the smallest actions make the biggest difference.."
+      }
+    ]
+  },
+  {
+    "id": "kindness-2",
+    "title": "The Generous Banyan Tree",
+    "theme": "kindness",
+    "content": "A traveler resting under a banyan tree was offered shade, fruits, and shelter by the spirit of the tree. In return for this kindness, he shared stories and laughter, enriching the tree\u2019s eternal life. It shows that kindness is a two-way gift.",
+    "images": [
+      "public/generated_content/images/kindness-2_scene_01.png",
+      "public/generated_content/images/kindness-2_scene_02.png",
+      "public/generated_content/images/kindness-2_scene_03.png",
+      "public/generated_content/images/kindness-2_scene_04.png",
+      "public/generated_content/images/kindness-2_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/kindness-2_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\kindness-2_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 7.3,
+        "text": "A traveler resting under a banyan tree was offered shade, fruits, and shelter by the spirit of the tree."
+      },
+      {
+        "start": 7.3,
+        "end": 14.7,
+        "text": "In return for this kindness, he shared stories and laughter, enriching the tree\u2019s eternal life."
+      },
+      {
+        "start": 14.7,
+        "end": 22.0,
+        "text": "It shows that kindness is a two-way gift.."
+      }
+    ]
+  },
+  {
+    "id": "justice-2",
+    "title": "The Honest Woodcutter",
+    "theme": "justice",
+    "content": "A woodcutter accidentally dropped his axe into a river. A river spirit offered him a golden and a silver axe, but he honestly claimed only his own. Pleased, the spirit rewarded his honesty. The story emphasizes that fairness and truthfulness are always recognized.",
+    "images": [
+      "public/generated_content/images/justice-2_scene_01.png",
+      "public/generated_content/images/justice-2_scene_02.png",
+      "public/generated_content/images/justice-2_scene_03.png",
+      "public/generated_content/images/justice-2_scene_04.png",
+      "public/generated_content/images/justice-2_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/justice-2_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\justice-2_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 5.8,
+        "text": "A woodcutter accidentally dropped his axe into a river."
+      },
+      {
+        "start": 5.8,
+        "end": 11.7,
+        "text": "A river spirit offered him a golden and a silver axe, but he honestly claimed only his own."
+      },
+      {
+        "start": 11.7,
+        "end": 17.5,
+        "text": "Pleased, the spirit rewarded his honesty."
+      },
+      {
+        "start": 17.5,
+        "end": 23.4,
+        "text": "The story emphasizes that fairness and truthfulness are always recognized.."
+      }
+    ]
+  },
+  {
+    "id": "wisdom-3",
+    "title": "Birbal and the Silent Answer",
+    "theme": "wisdom",
+    "content": "One day, Emperor Akbar asked Birbal a puzzling question in court. Instead of replying with words, Birbal drew a single circle on the ground. When Akbar pressed further, Birbal explained that the circle meant 'life comes full circle, and truth always returns to itself.' The courtiers were stunned, and Akbar realized that sometimes silence and symbols speak more wisely than long speeches.",
+    "images": [
+      "public/generated_content/images/wisdom-3_scene_01.png",
+      "public/generated_content/images/wisdom-3_scene_02.png",
+      "public/generated_content/images/wisdom-3_scene_03.png",
+      "public/generated_content/images/wisdom-3_scene_04.png",
+      "public/generated_content/images/wisdom-3_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/wisdom-3_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\wisdom-3_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 11.6,
+        "text": "One day, Emperor Akbar asked Birbal a puzzling question in court."
+      },
+      {
+        "start": 11.6,
+        "end": 23.2,
+        "text": "Instead of replying with words, Birbal drew a single circle on the ground."
+      },
+      {
+        "start": 23.2,
+        "end": 34.8,
+        "text": "When Akbar pressed further, Birbal explained that the circle meant 'life comes full circle, and truth always returns to itself.' The courtiers were stunned, and Akbar realized that sometimes silence and symbols speak more wisely than long speeches.."
+      }
+    ]
+  },
+  {
+    "id": "courage-3",
+    "title": "The Girl Who Faced the Dacoits",
+    "theme": "courage",
+    "content": "In a rural village, a young girl overheard dacoits planning to loot her home at night. Instead of running, she lit torches around the fields and beat a drum loudly, making it seem like the whole village was awake and armed. The dacoits, frightened, fled into the forest. Her fearless courage saved her people.",
+    "images": [
+      "public/generated_content/images/courage-3_scene_01.png",
+      "public/generated_content/images/courage-3_scene_02.png",
+      "public/generated_content/images/courage-3_scene_03.png",
+      "public/generated_content/images/courage-3_scene_04.png",
+      "public/generated_content/images/courage-3_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/courage-3_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\courage-3_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 6.6,
+        "text": "In a rural village, a young girl overheard dacoits planning to loot her home at night."
+      },
+      {
+        "start": 6.6,
+        "end": 13.2,
+        "text": "Instead of running, she lit torches around the fields and beat a drum loudly, making it seem like the whole village was awake and armed."
+      },
+      {
+        "start": 13.2,
+        "end": 19.8,
+        "text": "The dacoits, frightened, fled into the forest."
+      },
+      {
+        "start": 19.8,
+        "end": 26.4,
+        "text": "Her fearless courage saved her people.."
+      }
+    ]
+  },
+  {
+    "id": "kindness-3",
+    "title": "The King and the Old Woman\u2019s Roti",
+    "theme": "kindness",
+    "content": "A wandering king disguised as a traveler stopped by a poor old woman\u2019s hut. She welcomed him warmly and offered half of her only roti. Touched by her generosity, the king later revealed his identity and rewarded her with wealth, declaring that her true treasure was her kind heart.",
+    "images": [
+      "public/generated_content/images/kindness-3_scene_01.png",
+      "public/generated_content/images/kindness-3_scene_02.png",
+      "public/generated_content/images/kindness-3_scene_03.png",
+      "public/generated_content/images/kindness-3_scene_04.png",
+      "public/generated_content/images/kindness-3_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/kindness-3_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\kindness-3_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 7.9,
+        "text": "A wandering king disguised as a traveler stopped by a poor old woman\u2019s hut."
+      },
+      {
+        "start": 7.9,
+        "end": 15.8,
+        "text": "She welcomed him warmly and offered half of her only roti."
+      },
+      {
+        "start": 15.8,
+        "end": 23.7,
+        "text": "Touched by her generosity, the king later revealed his identity and rewarded her with wealth, declaring that her true treasure was her kind heart.."
+      }
+    ]
+  },
+  {
+    "id": "justice-3",
+    "title": "The Honest Guard and the Missing Jewels",
+    "theme": "justice",
+    "content": "A rich landlord accused his night guard of stealing jewels that had gone missing. The guard swore he was innocent, but no one believed him. The village judge gave each suspect a bamboo stick and said, 'By morning, the thief\u2019s stick will grow longer.' Fearful, the real thief cut a piece off his stick at night to hide his guilt. In the morning, the judge saw the shortened stick and exposed the true culprit, clearing the guard\u2019s name.",
+    "images": [
+      "public/generated_content/images/justice-3_scene_01.png",
+      "public/generated_content/images/justice-3_scene_02.png",
+      "public/generated_content/images/justice-3_scene_03.png",
+      "public/generated_content/images/justice-3_scene_04.png",
+      "public/generated_content/images/justice-3_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/justice-3_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\justice-3_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 9.1,
+        "text": "A rich landlord accused his night guard of stealing jewels that had gone missing."
+      },
+      {
+        "start": 9.1,
+        "end": 18.2,
+        "text": "The guard swore he was innocent, but no one believed him."
+      },
+      {
+        "start": 18.2,
+        "end": 27.4,
+        "text": "The village judge gave each suspect a bamboo stick and said, 'By morning, the thief\u2019s stick will grow longer.' Fearful, the real thief cut a piece off his stick at night to hide his guilt."
+      },
+      {
+        "start": 27.4,
+        "end": 36.5,
+        "text": "In the morning, the judge saw the shortened stick and exposed the true culprit, clearing the guard\u2019s name.."
+      }
+    ]
+  },
+  {
+    "id": "wisdom-4",
+    "title": "Tenali Raman and the Greedy Brahmin",
+    "theme": "wisdom",
+    "content": "A Brahmin tried to trick King Krishnadevaraya into giving him more gold by claiming his rituals would fail without it. Tenali Raman, known for his wit, disguised himself as a holy man and told the Brahmin that greed would anger the gods. Exposed and embarrassed, the Brahmin admitted his lie. The king praised Tenali for showing that wisdom lies in exposing falsehood with cleverness.",
+    "images": [
+      "public/generated_content/images/wisdom-4_scene_01.png",
+      "public/generated_content/images/wisdom-4_scene_02.png",
+      "public/generated_content/images/wisdom-4_scene_03.png",
+      "public/generated_content/images/wisdom-4_scene_04.png",
+      "public/generated_content/images/wisdom-4_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/wisdom-4_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\wisdom-4_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 8.5,
+        "text": "A Brahmin tried to trick King Krishnadevaraya into giving him more gold by claiming his rituals would fail without it."
+      },
+      {
+        "start": 8.5,
+        "end": 16.9,
+        "text": "Tenali Raman, known for his wit, disguised himself as a holy man and told the Brahmin that greed would anger the gods."
+      },
+      {
+        "start": 16.9,
+        "end": 25.4,
+        "text": "Exposed and embarrassed, the Brahmin admitted his lie."
+      },
+      {
+        "start": 25.4,
+        "end": 33.8,
+        "text": "The king praised Tenali for showing that wisdom lies in exposing falsehood with cleverness.."
+      }
+    ]
+  },
+  {
+    "id": "courage-4",
+    "title": "Abhimanyu in the Chakravyuha",
+    "theme": "courage",
+    "content": "In the Mahabharata, young Abhimanyu bravely entered the deadly Chakravyuha battle formation. Though he knew only how to enter and not how to exit, he fought fearlessly against mighty warriors. Surrounded and outnumbered, he fought valiantly till his last breath, remembered forever as a symbol of unmatched courage.",
+    "images": [
+      "public/generated_content/images/courage-4_scene_01.png",
+      "public/generated_content/images/courage-4_scene_02.png",
+      "public/generated_content/images/courage-4_scene_03.png",
+      "public/generated_content/images/courage-4_scene_04.png",
+      "public/generated_content/images/courage-4_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/courage-4_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\courage-4_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 9.2,
+        "text": "In the Mahabharata, young Abhimanyu bravely entered the deadly Chakravyuha battle formation."
+      },
+      {
+        "start": 9.2,
+        "end": 18.3,
+        "text": "Though he knew only how to enter and not how to exit, he fought fearlessly against mighty warriors."
+      },
+      {
+        "start": 18.3,
+        "end": 27.5,
+        "text": "Surrounded and outnumbered, he fought valiantly till his last breath, remembered forever as a symbol of unmatched courage.."
+      }
+    ]
+  },
+  {
+    "id": "kindness-4",
+    "title": "Shibi Raja and the Dove",
+    "theme": "kindness",
+    "content": "King Shibi, known for compassion, once sheltered a frightened dove fleeing from a hawk. The hawk demanded its prey, but Shibi offered his own flesh equal to the dove\u2019s weight instead. Amazed, the gods revealed themselves, blessing the king for his unmatched kindness and sacrifice.",
+    "images": [
+      "public/generated_content/images/kindness-4_scene_01.png",
+      "public/generated_content/images/kindness-4_scene_02.png",
+      "public/generated_content/images/kindness-4_scene_03.png",
+      "public/generated_content/images/kindness-4_scene_04.png",
+      "public/generated_content/images/kindness-4_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/kindness-4_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\kindness-4_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 8.4,
+        "text": "King Shibi, known for compassion, once sheltered a frightened dove fleeing from a hawk."
+      },
+      {
+        "start": 8.4,
+        "end": 16.7,
+        "text": "The hawk demanded its prey, but Shibi offered his own flesh equal to the dove\u2019s weight instead."
+      },
+      {
+        "start": 16.7,
+        "end": 25.1,
+        "text": "Amazed, the gods revealed themselves, blessing the king for his unmatched kindness and sacrifice.."
+      }
+    ]
+  },
+  {
+    "id": "justice-4",
+    "title": "Yudhishthira\u2019s Test of Truth",
+    "theme": "justice",
+    "content": "During their exile, the Pandavas were tested by Dharma in disguise. Yudhishthira, known for his fairness, answered riddles truthfully even when his brothers\u2019 lives were at stake. His unshaken commitment to truth and justice revived them, proving that justice flows from righteousness and clarity of thought.",
+    "images": [
+      "public/generated_content/images/justice-4_scene_01.png",
+      "public/generated_content/images/justice-4_scene_02.png",
+      "public/generated_content/images/justice-4_scene_03.png",
+      "public/generated_content/images/justice-4_scene_04.png",
+      "public/generated_content/images/justice-4_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/justice-4_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\justice-4_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 8.7,
+        "text": "During their exile, the Pandavas were tested by Dharma in disguise."
+      },
+      {
+        "start": 8.7,
+        "end": 17.3,
+        "text": "Yudhishthira, known for his fairness, answered riddles truthfully even when his brothers\u2019 lives were at stake."
+      },
+      {
+        "start": 17.3,
+        "end": 26.0,
+        "text": "His unshaken commitment to truth and justice revived them, proving that justice flows from righteousness and clarity of thought.."
+      }
+    ]
+  },
+  {
+    "id": "wisdom-5",
+    "title": "Chanakya and the Single Strand of Hair",
+    "theme": "wisdom",
+    "content": "Chanakya once found a single strand of hair in his meal. Instead of eating, he scolded himself for negligence, declaring that a small carelessness today could lead to a great downfall tomorrow. His discipline taught that wisdom lies in attention to the smallest details.",
+    "images": [
+      "public/generated_content/images/wisdom-5_scene_01.png",
+      "public/generated_content/images/wisdom-5_scene_02.png",
+      "public/generated_content/images/wisdom-5_scene_03.png",
+      "public/generated_content/images/wisdom-5_scene_04.png",
+      "public/generated_content/images/wisdom-5_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/wisdom-5_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\wisdom-5_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 7.9,
+        "text": "Chanakya once found a single strand of hair in his meal."
+      },
+      {
+        "start": 7.9,
+        "end": 15.7,
+        "text": "Instead of eating, he scolded himself for negligence, declaring that a small carelessness today could lead to a great downfall tomorrow."
+      },
+      {
+        "start": 15.7,
+        "end": 23.6,
+        "text": "His discipline taught that wisdom lies in attention to the smallest details.."
+      }
+    ]
+  },
+  {
+    "id": "courage-5",
+    "title": "Nachiketa Before Yama",
+    "theme": "courage",
+    "content": "In the Katha Upanishad, young Nachiketa fearlessly approached Yama, the god of death, after being offered to him by his father in anger. Instead of cowering, Nachiketa asked Yama deep questions about life and the soul. His fearless pursuit of truth granted him divine wisdom, showing courage not just in battle, but in seeking eternal knowledge.",
+    "images": [
+      "public/generated_content/images/courage-5_scene_01.png",
+      "public/generated_content/images/courage-5_scene_02.png",
+      "public/generated_content/images/courage-5_scene_03.png",
+      "public/generated_content/images/courage-5_scene_04.png",
+      "public/generated_content/images/courage-5_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/courage-5_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\courage-5_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 10.2,
+        "text": "In the Katha Upanishad, young Nachiketa fearlessly approached Yama, the god of death, after being offered to him by his father in anger."
+      },
+      {
+        "start": 10.2,
+        "end": 20.4,
+        "text": "Instead of cowering, Nachiketa asked Yama deep questions about life and the soul."
+      },
+      {
+        "start": 20.4,
+        "end": 30.6,
+        "text": "His fearless pursuit of truth granted him divine wisdom, showing courage not just in battle, but in seeking eternal knowledge.."
+      }
+    ]
+  },
+  {
+    "id": "kindness-5",
+    "title": "Rantideva\u2019s Hospitality",
+    "theme": "kindness",
+    "content": "King Rantideva, though reduced to poverty, received guests even when he had only a little food and water. He shared every last morsel, saying he desired only the well-being of all beings. The gods, moved by his kindness, appeared and blessed him with eternal glory.",
+    "images": [
+      "public/generated_content/images/kindness-5_scene_01.png",
+      "public/generated_content/images/kindness-5_scene_02.png",
+      "public/generated_content/images/kindness-5_scene_03.png",
+      "public/generated_content/images/kindness-5_scene_04.png",
+      "public/generated_content/images/kindness-5_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/kindness-5_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\kindness-5_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 8.1,
+        "text": "King Rantideva, though reduced to poverty, received guests even when he had only a little food and water."
+      },
+      {
+        "start": 8.1,
+        "end": 16.2,
+        "text": "He shared every last morsel, saying he desired only the well-being of all beings."
+      },
+      {
+        "start": 16.2,
+        "end": 24.3,
+        "text": "The gods, moved by his kindness, appeared and blessed him with eternal glory.."
+      }
+    ]
+  },
+  {
+    "id": "justice-5",
+    "title": "King Harishchandra\u2019s Trial",
+    "theme": "justice",
+    "content": "King Harishchandra, famed for truthfulness, lost his kingdom and wealth but refused to abandon justice and honesty. Even when working as a cremation ground keeper, he demanded fees from his own queen when she came to perform their son\u2019s rites. The gods, moved by his unwavering sense of justice, restored his kingdom and family.",
+    "images": [
+      "public/generated_content/images/justice-5_scene_01.png",
+      "public/generated_content/images/justice-5_scene_02.png",
+      "public/generated_content/images/justice-5_scene_03.png",
+      "public/generated_content/images/justice-5_scene_04.png",
+      "public/generated_content/images/justice-5_scene_05.png"
+    ],
+    "audioUrl": "public/generated_content/audio/justice-5_narration.mp3",
+    "videoUrl": "public/generated_content/videos/public\\generated_content\\videos\\justice-5_video.mp4",
+    "subtitles": [
+      {
+        "start": 0,
+        "end": 9.8,
+        "text": "King Harishchandra, famed for truthfulness, lost his kingdom and wealth but refused to abandon justice and honesty."
+      },
+      {
+        "start": 9.8,
+        "end": 19.5,
+        "text": "Even when working as a cremation ground keeper, he demanded fees from his own queen when she came to perform their son\u2019s rites."
+      },
+      {
+        "start": 19.5,
+        "end": 29.3,
+        "text": "The gods, moved by his unwavering sense of justice, restored his kingdom and family.."
       }
     ]
   }
