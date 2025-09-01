@@ -1,83 +1,52 @@
-# Smart Cultural Storyteller - Betal's Tales
+# 🪄 Smart Cultural Storyteller – The Tales of Betal  
 
-An AI-powered interactive storytelling application inspired by Vikram Betal stories. Features a sleeping Betal mascot who awakens to tell moral tales with AI-generated visuals.
+An AI-powered interactive storytelling app inspired by the legendary **Vikram & Betal** tales.  
+The app brings alive the sleeping **Betal mascot**, who awakens to narrate timeless moral stories, powered with AI-generated visuals and narration.  
 
-## 🎯 Features
-- Interactive Betal mascot (tap to wake)
-- 10 stories across 4 themes (Wisdom, Courage, Kindness, Justice)
-- AI-generated images and narration with Indian accent
-- Mystical animations and effects
-- Interactive moral questions
+---
 
-## 🛠 Required APIs (Free Options Available)
-- **Hugging Face API** (free): Image generation via Stable Diffusion
-- **Google TTS** (free): Indian accent narration with male voice  
-- **ElevenLabs** (optional): Premium voice quality with Daniel's mature male voice
+## ✨ Features  
 
-## 📦 Quick Start
+- 🧛 **Interactive Betal Mascot** – Tap to awaken Betal from his slumber.  
+- 📚 **20 Stories across 4 timeless themes** – *Wisdom, Courage, Kindness, Justice*.  
+- 🎨 **AI-Powered Narration & Visuals** – Storytelling with AI-generated images and an Indian-accented voice.  
+- 🌌 **Mystical UI & Animations** – A dark, eerie yet playful interface to set the mood.  
+- ❓ **Gamified Moral Questions** – Staying true to the spirit of the original Vikram–Betal puzzles.  
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🎮 Gamification Rules  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9d3117c4-43ad-4658-9843-364ff1e8207e) and start prompting.
+The original tales had a twist – if King Vikram answered Betal’s questions, Betal would escape. Silence was dangerous.  
+I’ve reimagined this logic into gameplay:  
 
-Changes made via Lovable will be committed automatically to this repo.
+- ✅ **Answer Correctly** – Betal gets angry 😡, goes back to sleep, but you earn a **coin**.  
+- ❌ **Answer Wrong** – Betal curses you ⚡ with a **30-second cooldown** where you cannot pick another story.  
+- 🤷 **Choose “I Don’t Know”** – Betal accepts your honesty without anger and resets normally, but:  
+  - You can only use this **3 times per session**.  
+  - It also triggers a **30-second cooldown**.  
 
-**Use your preferred IDE**
+This creates a balance of **wit, risk, and strategy**—just like the original Vikram & Betal dynamic!  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Future Additions  
 
-Follow these steps:
+- 🪙 **Leaderboard of coins** to compare with friends.  
+- 🔓 **Unlockable rare tales** with accumulated coins.  
+- 🎤 **Voice-based interactions** with Betal.  
+- 📅 **Daily “Story of the Day” challenges**.  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🌱 Why This Project?  
 
-# Step 3: Install the necessary dependencies.
-npm i
+I created **Betal’s Tales** to make **Indian folklore engaging for Gen-Z** through AI, storytelling, and gamification.  
+It’s not just about reading stories—it’s about **experiencing them**, reflecting on **morals**, and interacting with a mischievous Betal who tests your wisdom.  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## ⚡ Final Word  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/9d3117c4-43ad-4658-9843-364ff1e8207e) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**Awaken Betal. Hear the tales. Face the questions.**  
+But beware—the wrong answer may cost you more than just time...  
