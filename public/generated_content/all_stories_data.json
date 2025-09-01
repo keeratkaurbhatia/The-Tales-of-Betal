@@ -2,16 +2,17 @@
   {
     "id": "wisdom-1",
     "title": "The Monkey and the Crocodile",
+    "theme":"wisdom",
     "content": "A clever monkey lived on a jamun tree by a river. One day, a crocodile tried to trick the monkey into coming onto his back to eat him. Using his wit, the monkey told the crocodile he had left his heart on the tree and must return to fetch it. The crocodile, fooled, brought him back to safety. The monkey's intelligence saved his life, proving that sharp thinking can triumph over brute strength.",
     "images": [
-      "/generated_content/images/wisdom-1_scene_01.png",
-      "/generated_content/images/wisdom-1_scene_02.png",
-      "/generated_content/images/wisdom-1_scene_03.png",
-      "/generated_content/images/wisdom-1_scene_04.png",
-      "/generated_content/images/wisdom-1_scene_05.png"
+      "public/generated_content/images/wisdom-1_scene_01.png",
+      "public/generated_content/images/wisdom-1_scene_02.png",
+      "public/generated_content/images/wisdom-1_scene_03.png",
+      "public/generated_content/images/wisdom-1_scene_04.png",
+      "public/generated_content/images/wisdom-1_scene_05.png"
     ],
-    "audioUrl": "/generated_content/audio/wisdom-1_narration.mp3",
-    "videoUrl": "/generated_content/videos/generated_content\\videos\\wisdom-1_video.mp4",
+    "audioUrl": "public/generated_content/audio/wisdom-1_narration.mp3",
+    "videoUrl": "public/generated_content/videos/generated_content\\videos\\wisdom-1_video.mp4",
     "subtitles": [
       {
         "start": 0,
@@ -43,13 +44,14 @@
   {
     "id": "courage-1",
     "title": "The Brave Potter's Son",
+    "theme": "courage",
     "content": "In a small village, a young potter's son discovered a fire threatening the granary at night. Everyone was asleep, but he ran through the smoke and carried buckets of water tirelessly until the fire died out. His courage saved the village's food supply and taught everyone that even the smallest hands can achieve great deeds when fear is ignored.",
     "images": [
-      "/generated_content/images/courage-1_scene_01.png",
-      "/generated_content/images/courage-1_scene_02.png",
-      "/generated_content/images/courage-1_scene_03.png",
-      "/generated_content/images/courage-1_scene_04.png",
-      "/generated_content/images/courage-1_scene_05.png"
+      "public/generated_content/images/courage-1_scene_01.png",
+      "public/generated_content/images/courage-1_scene_02.png",
+      "public/generated_content/images/courage-1_scene_03.png",
+      "public/generated_content/images/courage-1_scene_04.png",
+      "public/generated_content/images/courage-1_scene_05.png"
     ],
     "audioUrl": "/generated_content/audio/courage-1_narration.mp3",
     "videoUrl": "/generated_content/videos/generated_content\\videos\\courage-1_video.mp4",
@@ -74,6 +76,7 @@
   {
     "id": "kindness-1",
     "title": "The Foolish Sage and the Hungry Crow",
+    "theme":"kindness",
     "content": "A wise but absent-minded sage often forgot to eat. One day, he found a hungry crow pecking at grains near his hut. Instead of scolding it, he shared his meager food. The crow, grateful, later returned with a treasure hidden in the forest, showing that even small acts of kindness can bring unexpected blessings.",
     "images": [
       "/generated_content/images/kindness-1_scene_01.png",
@@ -110,6 +113,7 @@
   {
     "id": "justice-1",
     "title": "The Clever Washerman",
+    "theme":"justice",
     "content": "A dishonest rich man claimed that a poor washerman had stolen his gold coins. The village elders were about to punish the washerman, but he suggested testing the claim: they should weigh the washerman and the coins together, then separately. By clever reasoning, he revealed the man had hidden the coins in his own pockets. The washerman\u2019s calm intelligence exposed injustice and taught the value of fairness and wit.",
     "images": [
       "/generated_content/images/justice-1_scene_01.png",
