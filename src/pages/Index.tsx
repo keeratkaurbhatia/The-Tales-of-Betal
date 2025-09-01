@@ -208,7 +208,7 @@ const handleThemeSelect = async (theme: string) => {
 
   return (
     <div className="min-h-screen relative overflow-hidden bg-center bg-cover bg-fixed"
-    style={{backgroundImage: "url('/dark_forest.svg')"}}>
+    style={{backgroundImage: "url('/dark_forest.jpeg')"}}>
 
       <div className="absolute inset-0 bg-[url('/stars.png')] opacity-30"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
