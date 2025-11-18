@@ -1,8 +1,5 @@
 # 🪄 Smart Cultural Storyteller – The Tales of Betal  
 
-An AI-powered interactive storytelling app inspired by the legendary **Vikram & Betal** tales.  
-The app brings alive the sleeping **Betal mascot**, who awakens to narrate timeless moral stories, powered with AI-generated visuals and narration.  
-View the project here- https://the-tales-of-betal.vercel.app/
 ---
 
 ## ✨ Features  
